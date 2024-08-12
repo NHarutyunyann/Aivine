@@ -1,0 +1,77 @@
+/* -------------SETTINGS ---------------
+--------------------------------------*/
+#admin {
+    .admin-settings {
+        .card {
+            .form-group {
+                .left {
+                    width: 30%;
+                    font-size: 14px;
+                    color: #1d2327;
+                    font-weight: 600;
+                    position: relative;
+                    top: 3px;
+                }
+                .form-check {
+                    padding-left: 0;
+                    width: 60%;
+                    display: flex;
+                    align-items: center;
+
+                    label {
+                        margin-left: 26px;
+                        top: -2px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .arrow-back {
+        color: $admin-color;
+        font-size: 12px;
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+.settings-tabs {
+    .nav-tabs {
+        border-bottom: 1px solid #c3c4c7;
+        margin: 0;
+        padding-top: 9px;
+        padding-bottom: 0;
+        line-height: inherit;
+        width: 100%;
+    }
+    .nav-link {
+        border: 1px solid #c3c4c7;
+        border-bottom: none;
+        margin-left: 0.5em;
+        padding: 5px 10px;
+        font-size: 14px;
+        line-height: 1.71428571;
+        font-weight: 600;
+        background-color: #dcdcde;
+        color: #50575e;
+        text-decoration: none;
+        white-space: nowrap;
+        border-radius: 0;
+        &:hover {
+            background-color: #fff;
+            color: #3c434a;
+        }
+        &:not(.active):hover {
+            border-color: #fff;
+        }
+        &.active {
+            border-bottom: 1px solid #f0f0f1;
+            background: #f0f0f1;
+            color: #000;
+        }
+    }
+}
+
+#shipping-classes {
+}

@@ -1,0 +1,162 @@
+/* -------------Products ---------------
+--------------------------------------*/
+#create-form {
+    .product-data-tabs {
+        font-size: 13px;
+        margin-bottom: 10px;
+        background: #fff;
+        &.card {
+            &.main-card {
+                .product-data-tabs-main-content {
+                    margin-top: 0;
+                    padding: 0;
+                }
+                .card-header {
+                    select {
+                        @extend .base-select;
+                    }
+                }
+            }
+        }
+        input {
+            margin-right: 8px;
+            margin-left: 8px;
+            &.form-control {
+                margin-left: 0;
+            }
+        }
+        #vert-tabs-tabContent {
+            padding: 12px 0;
+            margin-bottom: 20px;
+
+            .form-group.row {
+                justify-content: flex-start;
+                margin: 10px 0;
+                .col-form-label, .custom-control-label {
+                    font-size: 12px;
+                }
+                input, select {
+                    font-size: 13px;
+                }
+                &.switch-row .custom-control-input:checked ~ .custom-control-label::before {
+                    background-color: $admin-secondary-color;
+                    border-color: $admin-secondary-color;
+                }
+                &.switch-row {
+                    margin: 20px 0;
+                }
+                .custom-switch {
+                    padding-left: calc(2.25rem + 15px);
+                }
+            }
+            .cart-header-actions {
+                margin-bottom: 20px;
+            }
+            .tab-pane {
+                font-weight: 600;
+                &.attributes-tab {
+                    select {
+                        @extend .base-select;
+                    }
+                    .main-card {
+                        .card-body {
+                            background-color: #fdfdfd;
+                            padding: 1em;
+                        }
+                    }
+                }
+                .card-tools {
+                    top: auto;
+                    right: 0;
+                    a {
+                        @extend .btn, .btn-outline;
+                    }
+                }
+                &.variation-tab {
+                    input {
+                        @extend .base-input;
+                    }
+                    select {
+                        @extend .base-select;
+                    }
+
+                    p {
+                        color: $admin-secondary-color;
+                        border-radius: 5px;
+                        background: #fff;
+                    }
+                    .variants-container {
+                        padding-right: 100px;
+                        align-items: center;
+                    }
+                    .card-tools {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+        #vert-tabs-tab {
+            min-width: 180px;
+            padding: 0 0 10px;
+            position: relative;
+            background-color: #fafafa;
+            border-right: 1px solid #eee;
+            &.nav-tabs {
+                border-bottom: none;
+                .nav-link.active {
+                    border-bottom-color: transparent;
+                    border-radius: 0;
+                }
+            }
+            a {
+                font-size: 13px;
+                padding: 10px;
+                display: block;
+                box-shadow: none;
+                text-decoration: none;
+                border-bottom: 1px solid #eee;
+                color: $admin-color;
+                svg {
+                    margin-right: 10px;
+                }
+                &.active {
+                    color: #555;
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+}
+.admin-product-edit-content {
+    .upload-file-box label {
+        @extend .button, .btn-outline;
+        margin-bottom: 15px;
+    }
+    .upload-file-box input[type="file"] {
+        display: none;
+    }
+    .tinymce-uploader {
+        a.upload-media {
+            @extend .button;
+            margin-bottom: 6px;
+        }
+    }
+}
+#table-init {
+    &.table-products {
+        tbody {
+            td {
+                &:nth-child(2) {
+                    width: 52px;
+                    vertical-align: middle;
+                }
+                &:nth-child(3) {
+                    width: 11%;
+                }
+                &:nth-child(4) {
+                    width: 22%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+#admin {
+    /* ----------------Collapsed card styles ----------------*/
+    .card {
+        &.main-card {
+            position: relative;
+            min-width: 255px;
+            border-top: 1px solid #c3c4c7;
+            border-left: 1px solid #c3c4c7;
+            border-right: 1px solid #c3c4c7;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+            background-color: #fff;
+            margin-bottom: 20px;
+            .card-header {
+                font-size: 14px;
+                color: #1d2327;
+                font-weight: 600;
+                padding: 8px 12px;
+                border-bottom: 1px solid #c3c4c7;;
+                min-height: 36px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                button, a{
+                    font-size: 13px;
+                }
+            }
+            .card-body:not(.tinymce-box) {
+                margin-top: 6px;
+                border-bottom: 1px solid #c3c4c7;
+                padding: 0 12px 12px;
+            }
+        }
+
+        .card-two-col {
+            .form-group {
+                position: relative;
+                display: flex;
+                margin-bottom: 22px;
+                label {
+                    font-size: 14px;
+                    color: #1d2327;
+                    font-weight: 600;
+                    position: relative;
+                    top: 3px;
+                    width: 30%;
+                }
+                input, select, textarea {
+                    width: 40%;
+                }
+                .input-group-sm {
+                    width: 40%;
+                }
+                .input-group-sm input,
+                .input-group-sm select,
+                .input-group-sm textarea {
+                    width: 100%;
+                }
+                input[type="checkbox"], input[type="radio"] {
+                    width: 1rem;
+                }
+                &.checkbox {
+                    align-items: center;
+                    label {
+                        top: -3px;
+                        width: auto;
+                        margin-right: 10px;
+                    }
+                }
+                .invalid-feedback {
+                    position: absolute;
+                    bottom: -15px;
+                    left: 30%;
+                }
+            }
+            input:not([type=checkbox]) {
+                height: 30px;
+            }
+            select.form-control {
+                @extend .base-select;
+                border-color: #8c8f94;
+            }
+        }
+    }
+
+    .title-box,
+    .seo-box {
+        label {
+            width: 100%;
+        }
+        input {
+            height: 38px;
+        }
+        input, textarea {
+            padding: 3px 9px;
+            width: 100%;
+            font-size: 20px;
+            @extend .base-input;
+            @include placeholder {
+                color: #646970;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .card {
+        background-color: transparent;
+        border: 0;
+        .card-header {
+            display: flex;
+            background-color: transparent;
+            padding: 0;
+            border: 0;
+            .card-tools button,
+            .card-tools .btn {
+                @extend .button, .btn-outline;
+                &:focus {
+                    border-color: #3582c4;
+                    box-shadow: 0 0 0 1px #3582c4;
+                    outline: 2px solid transparent;
+                }
+            }
+            .card-tools .button,
+            .card-tools .btn-outline {
+                font-weight: 600;
+                border-radius: 2px;
+            }
+        }
+        .card-body {
+            padding: 0;
+        }
+    }
+}

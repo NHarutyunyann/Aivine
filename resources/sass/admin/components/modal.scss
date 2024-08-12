@@ -1,0 +1,211 @@
+/* ----------------Modal ----------------
+-------------------------------------------*/
+body, body.modal-open {
+    padding: 0!important;
+}
+#admin {
+   .modal {
+       button.close {
+           position: absolute;
+           right: 24px;
+           font-size: 26px;
+           background: transparent;
+           padding: 0;
+           margin: 0;
+           span {
+               display: block;
+               height: 30px;
+           }
+       }
+       .modal-header {
+           h4 {
+               text-transform: uppercase;
+               line-height: 30px;
+               font-size: 20px;
+           }
+       }
+       .modal-body {
+           min-height: auto;
+           overflow-y: auto;
+           .upload-file-box input[type="file"] {
+               display: none;
+           }
+       }
+       .modal-footer {
+           a.btn { @extend .button, .btn-primary; }
+       }
+   }
+    #modal-xl {
+        padding: 0 !important;
+        max-width: 100%;
+        height: 100%;
+        &.modal {
+            top: 34px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            width: auto;
+            height: auto;
+            overflow: hidden;
+
+            .modal-dialog {
+                max-width: 100% !important;
+                margin: 0;
+            }
+        }
+
+        .modal-dialog {
+            height: 100%;
+            .modal-content {
+                height: 100%;
+            }
+        }
+        ul.pagination {
+            margin-top: 4px !important;
+            li {
+                cursor: pointer;
+                a.page-link {
+                    border-color: $admin-secondary-color;
+                    background-color: #fff;
+                    color: $admin-color;
+                    transition: all .3s ease;
+                    &:hover {
+                        background-color: darken($admin-color, 0.5%);
+                        color: #fff;
+                        border-color: $admin-color;
+                    }
+                }
+                &.active a.page-link {
+                    color: #fff;
+                    background-color: $admin-secondary-color;
+                }
+            }
+        }
+    }
+}
+.bulk-confirm.modal {
+    top: 120px;
+    margin: auto;
+    .modal-dialog {
+        margin: 1.75rem auto;
+        max-width: 390px;
+    }
+    .modal-body { min-height: 80px; }
+}
+/* ---------Order view modal----------
+------------------------------------*/
+#orderView {
+    max-width: 100%;
+    width: 750px;
+    margin: auto;
+    td {
+        &.product-title {
+            width: 50%;
+        }
+
+    }
+    a {
+        color: #2271b1;
+        text-decoration: underline;
+        font-size: 13px;
+    }
+    .modal-content {
+        .modal-header {
+            padding: 14px 15px;
+            h4 {
+                font-family: Mardoto-Bold;
+                font-size: 18px;
+            }
+            button.close {
+                font-size: 26px;
+                padding: 14px 15px;
+                span { display: block; }
+            }
+            p {
+                border-radius: 5px;
+                padding: 4px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                &.status_Completed {
+                    background: #c8d7e1;
+                    color: #2e4453;
+                }
+                &.status_Processing {
+                    background: #c6e1c6;
+                    color: #5b841b;
+                }
+                &.status_Refunded {
+                    background: #e5e5e5;
+                    color: #777;
+                }
+                &.status_Failed {
+                    background: #eba3a3;
+                    color: #761919;
+                }
+            }
+        }
+        .modal-body {
+            min-height: fit-content;
+            h5, h6 {
+                color: $admin-secondary-color;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                font-size: 16px;
+            }
+            span {
+                color: $admin-secondary-color;
+                font-size: 14px;
+            }
+            .card-body {
+                max-height: fit-content;
+                border: 1px solid #999;
+               /* &::-webkit-scrollbar-track {
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                    background-color: #f5f5f5;
+                }
+                &::-webkit-scrollbar {
+                    background-color: #f5f5f5;
+                    width: 8px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                    background-color: #999;
+                }*/
+                table.table {
+                    th, td { border: 0; }
+                    thead {
+                        background-color: #e1e1e1;
+                        th {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            font-size: 14px;
+                            padding: 8px;
+                        }
+                    }
+                    tbody td {
+                        padding: 8px;
+                        div, a { font-weight: 500; }
+                        div { font-size: 14px; }
+                        a { font-size: 15px; }
+                        ul {
+                            padding-left: 15px;
+                            margin-bottom: 0;
+                            margin-top: 5px;
+                            li strong {
+                                text-transform: uppercase;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .modal-footer {
+            padding: 10px 0 0;
+            button {
+                @extend .button, .btn-primary;
+                margin-left: -3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+/* --------ATTRIBUTES---------------
+---------------------------------*/
+.admin-attribute-edit-content .card {
+    .remove-row {
+        .removeRow {
+            border-color: #3c4e69;
+            background: #3c4e69;
+            color: #fff;
+            line-height: 20.5px;
+            font-size: 13px;
+            height: 35px;
+        }
+        input:not(:first-of-type) {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+        input:nth-of-type(2) {
+            border-bottom-left-radius: 0.25rem;
+            border-top-left-radius: 0.25rem;
+        }
+    }
+}
+.add-attribute-box {
+    box-shadow: 0 0 30px $admin-secondary-color;
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 100%;
+    display: none;
+    width: 400px;
+    z-index: 10;
+}

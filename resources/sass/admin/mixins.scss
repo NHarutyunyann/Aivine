@@ -1,0 +1,24 @@
+/* ----------------Mixins----------------
+------------------------------------------*/
+@mixin admin-menu-dropdown {
+    .card-body ul li {
+        border: 1px solid $admin-secondary-color;
+        margin-bottom: 10px;
+        background: #fefefe;
+        margin-right: 10px;
+        font-weight: 600;
+        padding: 10px;
+        a, span.btn {
+            border-color: $admin-secondary-color;
+            background: $admin-secondary-color;
+            margin-right: 10px;
+        }
+    }
+}
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+}

@@ -1,0 +1,47 @@
+/* ------------CATEGORIES----------
+---------------------------------*/
+.categories {
+    border: 1px solid $admin-secondary-color;
+    background-color: #fff;
+    overflow-y: auto;
+    height: fit-content;
+    border-radius: 5px;
+    max-height: 200px;
+    list-style: none;
+    padding: 10px;
+    li {
+        content: "";
+        clear: both;
+        display: table;
+        width: 100%;
+        margin-bottom: 10px;
+        input {
+            @extend .base-checkbox;
+            height: 16px;
+            width: 16px;
+        }
+        label {
+            float: right;
+            vertical-align: text-top;
+            width: calc(100% - 22px);
+            font-size: 13px;
+            padding: 0;
+        }
+    }
+    ul {
+        padding-left: 15px;
+        list-style: none;
+        ul { padding-left: 30px; }
+    }
+}
+.admin-categories-create-content,
+.admin-categories-edit-content {
+    .display-type {
+        label {
+            display: block;
+        }
+        select {
+            width: auto;
+        }
+    }
+}

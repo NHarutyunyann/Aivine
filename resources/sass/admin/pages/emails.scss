@@ -1,0 +1,28 @@
+/* ----------------Emails----------------
+------------------*/
+.emails {
+    #actions_container {
+        align-items: flex-start;
+        display: flex;
+
+        .action {
+            position: relative;
+            margin-right: 6px;
+            label {
+                font-size: 13px;
+            }
+
+            input {
+                padding: 0 24px 0 8px;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                height: 32px;
+            }
+            svg {
+                position: absolute;
+                top: 8px;
+                right: 0.75rem;
+            }
+        }
+    }
+}

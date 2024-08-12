@@ -1,0 +1,101 @@
+#admin {
+    &.login-box {
+        background-color: transparent;
+        width: 320px;
+        padding: 5% 0 0;
+        margin: auto;
+        flex-direction: column;
+        height: auto;
+        .logo-box {
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 13px;
+            border-left: 4px solid #72aee6;
+            padding: 12px;
+            background-color: #fff;
+            box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+            width: 100%;
+        }
+        .login-form {
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 0;
+            padding: 26px 24px 34px;
+            font-weight: 400;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid #c3c4c7;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
+            .input-group {
+                flex-direction: column;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+        label {
+            font-size: 14px;
+            line-height: 1.5;
+            display: inline-block;
+            margin-bottom: 3px;
+            font-weight: normal!important;
+        }
+        input:not([type="checkbox"]) {
+            font-size: 24px;
+            line-height: 1.33333333;
+            width: 100%;
+            border-width: 0.0625rem;
+            padding: 0.1875rem 0.3125rem;
+            min-height: 40px;
+            max-height: none;
+        }
+        button[type="submit"] {
+            min-height: 32px;
+            line-height: 2.30769231;
+            padding: 0 12px;
+            border-radius: 3px;
+        }
+        .backTo {
+            font-size: 13px;
+            padding: 0 24px;
+            margin: 16px 0;
+            word-wrap: break-word;
+            a {
+                color: #50575e;
+                transition: all .3s ease;
+                &:hover {
+                    color: #135e96;
+                }
+            }
+        }
+        .input-box {
+            position: relative;
+            #user_password {
+                padding-right: 2.5rem;
+            }
+            .btn-hide-password {
+                position: absolute;
+                border: 1px solid transparent;
+                box-shadow: none;
+                font-size: 14px;
+                line-height: 2;
+                width: 2.5rem;
+                height: 2.5rem;
+                min-width: 40px;
+                min-height: 40px;
+                margin: 0;
+                padding: 5px 9px;
+                right: 0;
+                top: 0;
+                color: #0a4b78;
+                &:focus {
+                    background: 0 0;
+                    border-color: #3582c4;
+                    box-shadow: 0 0 0 1px #3582c4;
+                    outline: 2px solid transparent;
+                }
+            }
+        }
+    }
+}

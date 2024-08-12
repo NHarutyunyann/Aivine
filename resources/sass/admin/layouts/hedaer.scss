@@ -1,0 +1,169 @@
+header.admin-header {
+    flex-shrink: 0;
+    background-color: #1d2327;
+    text-align: right;
+    padding: 1px 8px;
+    width: 100%;
+    z-index: 9999;
+    left: 0;
+    .visit-site-box {
+        display: inline-block;
+        position: relative;
+        height: 32px;
+        float: left;
+        margin-left: -8px;
+        width: 180px;
+        &:hover  {
+            background: #2c3338;
+            color: #72aee6;
+            i { color: #72aee6; }
+
+            > ul {
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        > a {
+            text-decoration: none;
+            align-items: center;
+            font-size: 13px;
+            padding: 0 8px;
+            display: flex;
+            height: 32px;
+            color: #fff;
+            i {
+                color: rgba(240,246,252,.6);
+                margin-right: 8px;
+                font-size: 15px;
+            }
+        }
+        ul {
+            background: #2c3338;
+            list-style: none;
+            text-align: left;
+            display: block;
+            padding: 0 8px;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0 3px 5px rgb(0 0 0 / 20%);
+            transition: height .3s ease-in;
+            li a {
+                color: rgba(240,246,252,.7);
+                text-decoration: none;
+                align-items: center;
+                font-size: 13px;
+                display: flex;
+                height: 26px;
+                &:hover { color: #72aee6; }
+            }
+        }
+    }
+    .notification-box {
+        display: inline-block;
+        padding: 14px 0 13px;
+        vertical-align: top;
+        margin-right: 20px;
+        position: relative;
+        i {
+            font-size: 20px;
+            &:after {
+                background: #ff0000;
+                border-radius: 50%;
+                position: absolute;
+                content: "";
+                height: 8px;
+                z-index: 15;
+                right: -3px;
+                width: 8px;
+                top: 10px;
+            }
+        }
+    }
+    .admin-account-box {
+        display: inline-flex;
+        width: fit-content;
+        text-align: right;
+        margin-left: auto;
+        cursor: pointer;
+        margin-right: -8px;
+        padding: 0 8px;
+        align-items: center;
+        height: 32px;
+        transition: .5s;
+        &:hover {
+            background: #2c3338;
+        }
+        .admin-name-box {
+            display: inline-block;
+            margin-right: 5px;
+            p {
+                vertical-align: bottom;
+                display: inline-block;
+                margin-bottom: 0;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+        .admin-image {
+            vertical-align: baseline;
+            display: inline-block;
+            height: 18px;
+            width: 18px;
+        }
+        .logout-box {
+            background: #2c3338;
+            display: none;
+            z-index: 1;
+            right: 0;
+            top: 32px;
+            left: auto;
+            width: 120px;
+            text-align: left;
+            &--inner {
+                position: relative;
+                padding: 10px ;
+            }
+            .user-avatar {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+            a, p {
+                color: rgba(240,246,252,.7);
+                font-size: 13px;
+                font-weight: 400;
+            }
+            a {
+                &:hover {
+                    color: #72aee6;
+                }
+            }
+        }
+    }
+}
+#admin {
+    @media screen and (max-width: 1400px) {
+        padding-left: 0 !important;
+        header.admin-header {
+            width: 100% !important;
+            .header-bars-icon-box { display: block; }
+        }
+        .main-sidebar {
+            position: absolute;
+            z-index: 990;
+        }
+    }
+}

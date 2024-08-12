@@ -1,0 +1,29 @@
+@import "mixins";
+@import "base";
+@import "reset";
+
+//components
+@import "components/button";
+@import "components/tinymce";
+@import "components/select";
+@import "components/dataTable";
+@import "components/modal";
+@import "components/myEditor";
+@import "components/collapsedCard";
+
+//layouts
+@import "layouts/hedaer";
+@import "layouts/sidebar";
+
+//pages
+@import "pages/login";
+@import "pages/products";
+@import "pages/pages";
+@import "pages/attributes";
+@import "pages/categories";
+@import "pages/carts";
+@import "pages/galleries";
+@import "pages/formSubmissions";
+@import "pages/emails";
+@import "pages/orders";
+@import "pages/settings";

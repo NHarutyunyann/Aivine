@@ -1,0 +1,55 @@
+/* --------Form-submissions---------------
+----------------------------------------*/
+.form-submission_dataTable {
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+        &.main-template {
+            display: block;
+            height: 100%;
+            color: $admin-color;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    .actions {
+        visibility: hidden;
+        opacity: 0;
+
+        a {
+            color: $admin-color;
+            font-size: 13px;
+            &.trash {
+                color: #b32d2e;
+            }
+            &:not(:last-child) {
+                position: relative;
+                display: inline-block;
+            }
+            &:not(:last-child)::after {
+                content: "|";
+                display: inline-block;
+                color: $admin-color;
+                margin-left: 3px;
+            }
+        }
+    }
+    tr:hover  .actions {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#templateModal {
+    table th, table td {
+        font-family: 'Arial',sans-serif;
+        color: #636363;
+        margin: 0;
+        padding: 2px 14px;
+        vertical-align: top;
+        font-size: 14px;
+    }
+}

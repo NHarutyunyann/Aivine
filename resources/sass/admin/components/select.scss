@@ -1,0 +1,128 @@
+/* ----------------Custom select styles ----------------
+------------------------------------------------------*/
+#admin {
+    .custom-control-input:checked~.custom-control-label::before {
+        color: #fff;
+        border-color: #2185d0;
+        background-color: #2185d0;
+    }
+    input[type="checkbox"] {
+        @extend .base-checkbox;
+    }
+    textarea {
+        @extend .base-input;
+    }
+
+    select {
+        @extend .base-select;
+        &:checked {
+            option:hover {
+                background-color: $admin-color !important;
+            }
+        }
+    }
+
+    //vue-select
+    .v-select:not(.vs--multiple) {
+        @extend .base-select;
+        .vs__dropdown-menu {
+            li {
+                white-space: normal;
+                word-break: break-word;
+            }
+        }
+        .vs__dropdown-toggle {
+            button.vs__clear {
+                display: none;
+            }
+            .vs--single.vs--open .vs__selected {
+                position: relative;
+            }
+        }
+        .vs__open-indicator {
+            margin-left: auto;
+            transform: scale(0.8);
+        }
+        .vs__selected {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            justify-content: space-between;
+            input {
+                display: none;
+            }
+        }
+        .vs__selected-options{
+            input.vs__search {
+                display: none;
+            }
+        }
+    }
+    .v-select.vs--multiple {
+        .vs__dropdown-menu {
+            li {
+                white-space: normal;
+                word-break: break-word;
+            }
+        }
+        .vs__selected {
+            background-color: #e4e4e4;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: 0 5px;
+            margin: 5px 5px 0 0;
+            color: #999;
+            font-size: 13px;
+        }
+        .vs__dropdown-toggle {
+            background-color: #fff;
+            padding: 0 5px 15px;
+        }
+        .vs__search {
+            border: none;
+        }
+        .vs__actions {
+            top: 5px;
+            position: relative;
+            align-items: flex-start;
+        }
+    }
+    .media-item-box {
+        margin-bottom: 10px;
+    }
+
+    .select2-container--default {
+        .select2-selection--multiple {
+            background-color: #fff;
+            padding: 0 5px 5px 15px;
+            .select2-selection__choice {
+                background-color: #e4e4e4;
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                padding: 0 5px 0 20px;
+                margin: 5px 5px 0 0;
+                color: #999;
+                font-size: 13px;
+                &__remove {
+                    border-right: none;
+                    font-weight: 900;
+                    font-size: 15px;
+                    line-height: 17px;
+                    &:hover {
+                        background-color: inherit;
+                        color: inherit;
+                        outline: none;
+                    }
+                }
+            }
+            .select2-search__field {
+                width: 100% !important;
+                border: none;
+            }
+            .select2-selection__clear {
+                margin-top: 0;
+                top: 0;
+            }
+        }
+    }
+}

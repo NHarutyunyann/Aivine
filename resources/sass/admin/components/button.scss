@@ -1,0 +1,60 @@
+.btn-outline {
+    @extend .button;
+    color: $admin-color;
+    border-color: $admin-color;
+    background-color: #f6f7f7;
+    &:focus {
+        background-color: #f6f7f7;
+        border-color: #3582c4;
+        color: #0a4b78;
+        box-shadow: 0 0 0 1px #3582c4;
+        outline: 2px solid transparent;
+        outline-offset: 0;
+    }
+    &:hover {
+        background-color: #f0f0f1;
+        border-color: #0a4b78;
+        color: #0a4b78;
+    }
+}
+
+.btn-primary {
+    @extend .button;
+    width: auto;
+    background-color: $admin-color;
+    border-color: $admin-color;
+    color: #fff;
+    background-image: none;
+    &:hover {
+        background-color: #1678c2;
+        border-color: #1678c2;
+    }
+}
+.btn-danger {
+    @extend .button;
+    background-color: #db2828;
+    color: #fff;
+    &:hover {
+        background-color: #d01919;
+    }
+}
+.bulk-apply {
+    @extend .button, .btn-outline;
+}
+
+.export-csv {
+    @extend .button;
+    border-color: #e0e1e2;
+    background: #e0e1e2;
+    color: #0009;
+    &:hover {
+        background-color: #cacbcd;
+        -webkit-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+        box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+        color: rgba(0,0,0,.8);
+    }
+}
+
+.add-attribute-btn {
+    @extend .button, .btn-outline;
+}

@@ -1,0 +1,39 @@
+/* --------------MY EDITOR ------------
+-------------------------------------*/
+#myEditor {
+    .list-group-item {
+        border-color: #dcdcde;
+        font-size: 13px;
+        font-weight: 600;
+        position: relative;
+        padding: 10px 15px;
+        height: auto;
+        min-height: 20px;
+        background-color: #f6f7f7;
+        color: #1d2327;
+        margin-bottom: 15px;
+    }
+    .list-group-item+.list-group-item {
+        border-top-width: 1px;
+    }
+    .listInner {
+        display: flex;
+        align-items: center;
+    }
+    .btn-group {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+    .btnEdit {
+        color: #2271b1;
+        margin-right: 15px;
+    }
+    .btnRemove {
+        color: #db2828;
+    }
+    .btnEdit, .btnRemove {
+        &:focus, &:active {
+            color: inherit;
+        }
+    }
+}

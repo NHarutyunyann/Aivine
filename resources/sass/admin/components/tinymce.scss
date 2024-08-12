@@ -1,0 +1,38 @@
+#admin {
+    //tox-tinymce styles
+    .tinymce-box {
+        .media-item-box {
+            margin: 10px;
+        }
+        .tox-tinymce {
+            border-top: 1px solid #c3c4c7;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #c3c4c7;
+            .tox .tox-mbtn {
+                height: 30px;
+            }
+            .tox-editor-header {
+                -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+                -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+                .tox-toolbar {
+                    background-color: #f6f7f7;
+                }
+            }
+
+            * {
+                border-color: #c3c4c7;
+            }
+
+            .tox-mbtn--active, .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active) {
+                border-color: $admin-color !important;
+                box-shadow: 0 0 0 1px $admin-color;
+                background: transparent;
+                outline: 2px solid transparent;
+                color: #595959;
+                border-radius: 0;
+            }
+        }
+    }
+}
