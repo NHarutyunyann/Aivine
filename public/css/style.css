@@ -176,7 +176,130 @@ left: -30%;
 
 /*End Home blade*/
 /*Start Contact blade*/
+.contact{
+  width: 100%;
+  margin: 0 0 40px 0;
+}
+.contact_first{
+  width: 100%;
+  position: relative;
 
+}
+.contact_first_img{
+  width: 100%;
+}
+.contact_first_text{
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  /* margin: -25px 0 0 -25px; */
+  transform: translate(-25%, -50%);
+  font-size: 60px;
+  color:#FFF;
+}
+
+.send_message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.send_message form {
+  width: 100%;
+}
+.send_message_info {
+  width: 100%;
+}
+
+.send_message_title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  color: #445189;
+  font-weight: 700;
+}
+.send_message_inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.name_phone {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.message {
+  max-width: 1000px;
+  width: 100%;
+}
+.name_phone input,
+.message textarea {
+  width: 50%;
+  height: 50px;
+  background-image: linear-gradient(to right, #445189, #B99A9E);
+  padding: 20px;
+  color: #1a4c5b;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+.name_phone input::placeholder{
+  color:#ffff;
+}
+.message textarea::placeholder{
+  color:#ffff;
+
+}
+.message textarea {
+  width: 100%;
+  height: 200px;
+}
+.send_message_btn {
+  display: flex;
+  justify-content: center;
+}
+.send_message_btn button {
+  border: none;
+  height: 64px;
+  width: 248px;
+  background-image: linear-gradient(to right, #445189, #B99A9E);
+  border-radius: 12px;
+  font-size: 18px;
+  color: #ffff;
+}
+.send_message_btn button:hover {
+  border-radius: 12px;
+  background-color: #1a4c5b;
+}
+.send_message_btn button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .name_phone {
+    flex-direction: column;
+  }
+  .name_phone input {
+    width: 100%;
+  }
+  .message {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+}
 
 
 /*End Contact blade*/
