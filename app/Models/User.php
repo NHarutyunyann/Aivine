@@ -36,7 +36,6 @@ class User extends Authenticatable{
         self::STATUS_INACTIVE,
     ];
 
-    // protected $searchFields = ['nickname', 'first_name', 'last_name', 'email'];
     protected $searchFields = [ 'name', 'email'];
 
     //SCOPE STATUSES

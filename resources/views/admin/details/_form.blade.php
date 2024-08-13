@@ -5,16 +5,9 @@
             <div class="card-body">
                 
                 @include('admin.model.inputs.text', ['entity' => $entity ?? null, 'field' => 'title', 'classes' => 'generate-slug'])
-                @include('admin.model.inputs.text', ['entity' => $entity ?? null, 'field' => 'title_hy'])
-                @include('admin.model.inputs.text', ['entity' => $entity ?? null, 'field' => 'title_ru'])
 
                 @include('admin.model.inputs.text', ['entity' => $entity ?? null, 'field' => 'content', 'classes' => 'input-content'])
-                @include('admin.model.inputs.text', ['entity' => $entity ?? null, 'field' => 'content_hy'])
-                @include('admin.model.inputs.text', ['entity' => $entity ?? null, 'field' => 'content_ru'])
 
-                @include('admin.model.inputs.text', ['entity' => $entity ?? null, 'field' => 'icon', 'classes' => 'input-icon'])
-
-                @include('admin.model.inputs.text', ['entity' => $entity ?? null, 'field' => 'price', 'classes' => 'input-price'])
 
             </div>
         </div>
@@ -29,12 +22,12 @@
         </div>
     </div>
 
-    {{-- <div class="row">
+    <div class="row">
         <div class="col-12">
             @include('admin.model.inputs.upload-from-media', [
                 'entity' => $entity ?? null,
                 'field' => 'main_image',
             ])
         </div>
-    </div> --}}
+    </div>
 </div>

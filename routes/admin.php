@@ -7,19 +7,19 @@ Auth::routes();
 Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard');
 
-    //PROJECTS
-    Route::get('/projects/search', [\App\Http\Controllers\Admin\ProjectController::class, 'search'])->name('admin.products.search');
-    Route::post('/projects/update-positions', [\App\Http\Controllers\Admin\ProjectController::class, 'updatePositions'])->name('admin.products.updatePositions');
-    Route::get('/projects/draw', [\App\Http\Controllers\Admin\ProjectController::class, 'draw'])->name('admin.products.draw');
-    Route::any('/projects/bulk-actions', [\App\Http\Controllers\Admin\ProjectController::class, 'bulkActions']);
-    Route::resource('projects', \App\Http\Controllers\Admin\ProjectController::class);
+    // PRODUCTS
+    Route::get('/products/search', [\App\Http\Controllers\Admin\ProductController::class, 'search'])->name('admin.products.search');
+    Route::post('/products/update-positions', [\App\Http\Controllers\Admin\ProductController::class, 'updatePositions'])->name('admin.products.updatePositions');
+    Route::get('/products/draw', [\App\Http\Controllers\Admin\ProductController::class, 'draw'])->name('admin.products.draw');
+    Route::any('/products/bulk-actions', [\App\Http\Controllers\Admin\ProductController::class, 'bulkActions']);
+    Route::resource('products', \App\Http\Controllers\Admin\ProductController::class);
 
-    //Services
-    Route::get('/services/search', [\App\Http\Controllers\Admin\ServiceController::class, 'search'])->name('admin.services.search');
-    Route::post('/services/update-positions', [\App\Http\Controllers\Admin\ServiceController::class, 'updatePositions'])->name('admin.services.updatePositions');
-    Route::get('/services/draw', [\App\Http\Controllers\Admin\ServiceController::class, 'draw'])->name('admin.services.draw');
-    Route::any('/services/bulk-actions', [\App\Http\Controllers\Admin\ServiceController::class, 'bulkActions']);
-    Route::resource('services', \App\Http\Controllers\Admin\ServiceController::class);
+    // DETAILS
+    Route::get('/details/search', [\App\Http\Controllers\Admin\DetailsController::class, 'search'])->name('admin.details.search');
+    Route::post('/details/update-positions', [\App\Http\Controllers\Admin\DetailsController::class, 'updatePositions'])->name('admin.details.updatePositions');
+    Route::get('/details/draw', [\App\Http\Controllers\Admin\DetailsController::class, 'draw'])->name('admin.details.draw');
+    Route::any('/details/bulk-actions', [\App\Http\Controllers\Admin\DetailsController::class, 'bulkActions']);
+    Route::resource('details', \App\Http\Controllers\Admin\DetailsController::class);
 
     //USERS //ROLES
     Route::get('/users/draw', [\App\Http\Controllers\Admin\UserController::class, 'draw'])->name('admin.user.draw');
@@ -41,21 +41,25 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('settings/general', function () {return view('admin.settings.general');})->name('settings.general');
     Route::resource('settings', \App\Http\Controllers\Admin\SettingController::class);
 
-    //POSTS
-    Route::get('/posts/draw', [\App\Http\Controllers\Admin\PostController::class, 'draw'])->name('admin.posts.draw');
-    Route::post('/posts/bulk-actions', [\App\Http\Controllers\Admin\PostController::class, 'bulkActions']);
-    Route::resource('posts', \App\Http\Controllers\Admin\PostController::class);
-
+    // QUESTIONS
+    // Route::get('/questions/draw', [\App\Http\Controllers\Admin\QuestionController::class, 'draw'])->name('admin.questions.draw');
+    // Route::post('/questions/bulk-actions', [\App\Http\Controllers\Admin\QuestionController::class, 'bulkActions']);
+    // Route::resource('questions', \App\Http\Controllers\Admin\QuestionController::class);
+    Route::get('/questions/search', [\App\Http\Controllers\Admin\QuestionController::class, 'search'])->name('admin.questions.search');
+    Route::post('/questions/update-positions', [\App\Http\Controllers\Admin\QuestionController::class, 'updatePositions'])->name('admin.questions.updatePositions');
+    Route::get('/questions/draw', [\App\Http\Controllers\Admin\QuestionController::class, 'draw'])->name('admin.questions.draw');
+    Route::any('/questions/bulk-actions', [\App\Http\Controllers\Admin\QuestionController::class, 'bulkActions']);
+    Route::resource('questions', \App\Http\Controllers\Admin\QuestionController::class);
 
     //PARTNERS
-    Route::get('/partners/draw', [\App\Http\Controllers\Admin\PartnerController::class, 'draw'])->name('admin.partners.draw');
-    Route::post('/partners/bulk-actions', [\App\Http\Controllers\Admin\PartnerController::class, 'bulkActions']);
-    Route::resource('partners', \App\Http\Controllers\Admin\PartnerController::class);
+    // Route::get('/partners/draw', [\App\Http\Controllers\Admin\PartnerController::class, 'draw'])->name('admin.partners.draw');
+    // Route::post('/partners/bulk-actions', [\App\Http\Controllers\Admin\PartnerController::class, 'bulkActions']);
+    // Route::resource('partners', \App\Http\Controllers\Admin\PartnerController::class);
 
     //Menus
-    Route::get('/menus/draw', [\App\Http\Controllers\Admin\MenuController::class, 'draw'])->name('admin.menus.draw');
-    Route::post('/menus/deleteSelected', [\App\Http\Controllers\Admin\MenuController::class, 'deleteSelected'])->name('admin.menus.deleteSelected');
-    Route::resource('menus', \App\Http\Controllers\Admin\MenuController::class);
+    // Route::get('/menus/draw', [\App\Http\Controllers\Admin\MenuController::class, 'draw'])->name('admin.menus.draw');
+    // Route::post('/menus/deleteSelected', [\App\Http\Controllers\Admin\MenuController::class, 'deleteSelected'])->name('admin.menus.deleteSelected');
+    // Route::resource('menus', \App\Http\Controllers\Admin\MenuController::class);
 
     //ATTACHMENTS
     Route::resource('attachments', \App\Http\Controllers\Admin\AttachmentController::class);
@@ -65,7 +69,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::post('/slugify', [\App\Http\Controllers\Admin\DashboardController::class, 'slugify'])->name('text.slugify');
 
     // SLIDERS
-    Route::get('/sliders/draw', [\App\Http\Controllers\Admin\SliderController::class, 'draw'])->name('admin.sliders.draw');
-    Route::post('/sliders/bulk-actions', [\App\Http\Controllers\Admin\SliderController::class, 'bulkActions']);
-    Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
+    // Route::get('/sliders/draw', [\App\Http\Controllers\Admin\SliderController::class, 'draw'])->name('admin.sliders.draw');
+    // Route::post('/sliders/bulk-actions', [\App\Http\Controllers\Admin\SliderController::class, 'bulkActions']);
+    // Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
 });

@@ -2,7 +2,7 @@
     <div class="visit-site-box">
         <a href="/">
             <i class="fas fa-home"></i>
-            Code Origins
+            Aivine
         </a>
         <ul class="list">
             <li>

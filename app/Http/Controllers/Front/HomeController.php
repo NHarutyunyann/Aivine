@@ -5,12 +5,15 @@ use App\Http\Controllers\Controller;
 use App\Mail\MyTestEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 
 class HomeController extends Controller{
 
     public function index(){
-        
+        // $data= 'aivinebeauty.com!@#';
+        // dd(Hash::make($data));
+
         return view('front.home');
     }
    

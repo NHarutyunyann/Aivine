@@ -14,11 +14,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(10)->create();
 
         \App\Models\Setting::create([
             'key' => 'phone',
             'value' => '+374 98 00 00 00',
+            
         ]);
 
         // \App\Models\Tag::factory()->create([
