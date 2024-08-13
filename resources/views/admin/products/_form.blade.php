@@ -26,4 +26,32 @@
             ])
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row image-row">
+                <div class="col-12">
+                    <div class="card card-default main-card">
+                        <div data-card-widget="collapse">
+                            <div class="card-header">
+                                <span>Attachments</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <media-uploader prop-input-name="relations[attachments]" :prop-multiple="true"
+                                        class="@error('attachments') is-invalid @enderror"
+                                        :prop-selected-attachments="{{ json_encode(@$entity->attachments ? $entity->attachments : \App\Models\Attachment::whereIn('id', old('attachments', []))->get()) }}">
+                                    </media-uploader>
+                                    @error('attachments')
+                                        <span class="invalid-feedback">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
