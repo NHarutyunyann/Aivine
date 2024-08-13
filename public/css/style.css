@@ -12,7 +12,9 @@
   display: flex;
   justify-content: space-between;
   padding: 0 70px 0 0;
-  
+  position: fixed;
+    top: 0;
+    z-index: 3;
 }
 
 .header_left {
@@ -119,7 +121,8 @@ left: -30%;
   left: 6%;
   display: flex;
   flex-direction: column;
-  gap: 20px
+  gap: 20px;
+  z-index: 2;
 }
 .footer_left_logo {
   max-width: 200px;
@@ -150,13 +153,23 @@ left: -30%;
   font-size: 12px;
   color: #445189
 }
-  
+.footer_right_logo {
+  position:absolute;
+  bottom: 1px;
+  right:1px;
+  max-width: 212px;
+  min-width: 100px;
+  max-height: 600px;
+  min-height: 40px; 
+  z-index: 1;
+}
 /*end footer*/
 /*Start Home blade*/
 
 .home {
+  margin-top: 70px;
   width: 100%;
-  height: 200px;
+  height: 100vh;
   background-color: pink;
 }
 
