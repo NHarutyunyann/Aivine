@@ -20,33 +20,15 @@
     <div>
         <header class="header">
             <div class="head header_left">
-                <div>
-                    <ul>
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="/about-us">О Нас</a></li>
-                        <li><a href="/contacts">Контакти</a></li>
-                    </ul>
-                </div>
+                <img src="/images/aivine/headerLeftrococo.png" alt="" class="header_left_background_img">
+                <img src="/images/aivine/logo.png" alt="" class="header_left_logo">
             </div>
-            <div class="head header_center">
-                <div>
-                    <a href="/"><img src="/images/stom/logo.svg" alt="logo"></a>
-                </div>
-            </div>
+           
             <div class="head header_right">
-                <div>
-                    <ul>
-                        <li>
-                            <a href=""><img src="/images/stom/insta.svg" alt="image"></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="/images/stom/telegram.svg" alt="image"></a>
-                                </li>
-                        <li>
-                            <a href=""> <img src="/images/stom/whatsapp.svg" alt="image"></a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="header_right_ul">
+                    <li class="header_right_li"><a class="header_right_li_a" href="/">HOME</a></li>
+                    <li class="header_right_li"><a class="header_right_li_a" href="/contacts">TO ORDER</a></li>
+                </ul>
             </div>
         </header>
 
@@ -54,37 +36,22 @@
         @yield('content')
 
 
-        <div>
             <div class="footer">
-                <div class="foot footer_left">
-                    <div class="footer_logo">
-                        <a href="/"><img src="/images/stom/logo.svg" alt="logo"></a>
-                    </div>
-                    
-                </div>
-                <div class="foot footer_center">
-                   
-                </div>
-                <div class="foot footer_right">
-                    <div>
-                        <h3>Оставайся на связи</h3>
-                    </div>
-                    <div>
-                        
-                    </div>
+            <img src="/images/aivine/headerLeftrococo.png" alt="" class="footer_background_img1">
+            <div class="footer_block">
+            <img src="/images/aivine/logo2.png" alt="" class="footer_left_logo">
+                <a class="footer_button"><p class="footer_button_text">TO ORDER</p></a>
+                <div class="copyright_box">
+                    <p class="copyright_text">© 2024, All Rights Reserved by <a href="https://codeorigins.am/"
+                    target="_blank" class='codeOrigins'>Codeorigins.am</a></p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="copyright-box">
-                        <p class="copyright-text">© 2024, All Rights Reserved by <a href="https://codeorigins.am/"
-                                target="_blank" class='codeOrigins'>Codeorigins.am</a></p>
-                    </div>
-                </div>
+                
             </div>
-        </div>
-
+            
+    
     </div>
+    
     @yield('script')
 </body>
 
