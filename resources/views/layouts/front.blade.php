@@ -37,16 +37,16 @@
 
 
             <div class="footer">
-            <img src="/images/aivine/headerLeftrococo.png" alt="" class="footer_background_img1">
-            <div class="footer_block">
-            <img src="/images/aivine/logo2.png" alt="" class="footer_left_logo">
-                <a class="footer_button"><p class="footer_button_text">TO ORDER</p></a>
-                <div class="copyright_box">
-                    <p class="copyright_text">© 2024, All Rights Reserved by <a href="https://codeorigins.am/"
-                    target="_blank" class='codeOrigins'>Codeorigins.am</a></p>
+                <img src="/images/aivine/headerLeftrococo.png" alt="" class="footer_background_img1">
+                <div class="footer_block">
+                    <img src="/images/aivine/logo2.png" alt="" class="footer_left_logo">
+                    <a class="footer_button"><p class="footer_button_text">TO ORDER</p></a>
+                    <div class="copyright_box">
+                        <p class="copyright_text">© 2024, All Rights Reserved by <a href="https://codeorigins.am/"
+                        target="_blank" class='codeOrigins'>Codeorigins.am</a></p>
+                    </div>
                 </div>
-            </div>
-                
+                <img src="/images/aivine/footer22.png" alt="" class="footer_right_logo">
             </div>
             
     
