@@ -10,7 +10,11 @@
 @section('content')
    
 
-<h1>home</h1>
+<div class='home'>
+    <div class='homeblock1'>
+    <img src="/images/aivine/homeImg1.png" alt="" class="">
+    </div>
+</div>
 
 
 
