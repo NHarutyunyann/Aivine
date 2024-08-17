@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +20,10 @@
         <header class="header">
             <div class="head header_left">
                 <img src="/images/aivine/headerLeftrococo.png" alt="" class="header_left_background_img">
-                <img src="/images/aivine/logo.png" alt="" class="header_left_logo">
+                <a href="/">
+                    <img src="/images/aivine/logo.png" alt="" class="header_left_logo">
+                </a>
             </div>
-           
             <div class="head header_right">
                 <ul class="header_right_ul">
                     <li class="header_right_li"><a class="header_right_li_a" href="/">HOME</a></li>
@@ -39,7 +39,9 @@
             <div class="footer">
                 <img src="/images/aivine/headerLeftrococo.png" alt="" class="footer_background_img1">
                 <div class="footer_block">
-                    <img src="/images/aivine/logo2.png" alt="" class="footer_left_logo">
+                    <a href="/">
+                        <img src="/images/aivine/logo2.png" alt="" class="footer_left_logo">
+                    </a>
                     <a class="footer_button"><p class="footer_button_text">TO ORDER</p></a>
                     <div class="copyright_box">
                         <p class="copyright_text">© 2024, All Rights Reserved by <a href="https://codeorigins.am/"
@@ -48,7 +50,6 @@
                 </div>
                 <img src="/images/aivine/footer22.png" alt="" class="footer_right_logo">
             </div>
-            
     
     </div>
     

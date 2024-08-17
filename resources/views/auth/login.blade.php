@@ -3,9 +3,9 @@
 @section('title', 'Log in')
 
 @section('content')
-    <div id="admin" class="login-box">
+    <div id="admin" class="login-box" >
         <div class="logo-box text-center">
-            {{-- <a href="{{url('/admin')}}" class="h1"><img loading="lazy"  style="width: 100%" src="/images/dinnoli/dinnoli.png"/></a> --}}
+            <a href="{{url('/admin')}}" class="h1"><img loading="lazy"  style="width: 100%;" src="/images/aivine/adminLogo.png"/></a>
         </div>
         <p class="message">You are now logged out.</p>
         <div class="login-form">
@@ -29,15 +29,15 @@
                     @error('password')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                 </div>
                 <div class="row">
-                    <div class="col text-right">
+                    <div class="col text-right" style="margin: 10px auto; display: flex; justify-content: center;">
                         <button type="submit" class="btn btn-primary btn-block">{{ __('Log in') }}</button>
                     </div>
                     <!-- /.col -->
                 </div>
             </form>
         </div>
-        <p class="backTo">
-            <a href="{{ url('/') }}">← Go to Code Origins</a>
+        <p class="backTo" style="margin: 20px auto;">
+            <a href="{{ url('/') }}">← Go to Aivine</a>
         </p>
     </div>
 @endsection

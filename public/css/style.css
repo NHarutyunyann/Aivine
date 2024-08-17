@@ -95,6 +95,7 @@ position: relative;
 
 /*start footer*/
 .footer {
+  margin-top: 100px;
   width: 100%;
   height: 250px;
   position: relative;
@@ -170,12 +171,221 @@ left: -30%;
 
 .home {
   width: 100%;
-  height: 300px;
+  height: 420px;
   background-color: white;
   overflow: hidden;
 }
+.home_first_image{
+  width: 100%;
+}
+.home_first_text{
+  text-transform: uppercase;
+  left: 0;
+  margin-top: -125px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  color: #ffff;
+  font-size: 40px;
+}
+.home_first_btn{
+  width: 200px;
+  height: 60px;
+  left: 40%;
+  /* margin-top: 80px; */
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  color: #ffff;
+  font-size: 24px;
+}
 
 
+
+
+
+.home_second{
+  width: 100%;
+  padding: 20px 50px;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home_second_title{
+  width: 100%;
+  text-align: center;
+  color: #445189;
+  font-size: 30px;
+}
+.home_second_boxes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.home_second_box{
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffff;
+}
+.home_second_image{
+  padding: 10px;
+}
+.home_second_image img{
+  border-radius: 50%;
+}
+.home_second_info{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  
+}
+.home_second_info_title{
+  text-align: center;
+  font-size: 30px;
+  color: #445189;
+}
+.home_second_info_text{
+  text-align: center;
+  color: #79889E;
+}
+
+
+
+
+
+.home_third{
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home_third_title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.home_third_title h2{
+  text-transform: uppercase;
+  color: #445189;
+  font-size: 30px;
+}
+.home_third_title p{
+  color: #445189;
+  font-size: 20px;
+}
+.home_third_image{
+  display: flex;
+  justify-content: center;
+}
+.home_third_image img{
+  width: 50%;
+}
+
+
+
+.home_fourth{
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-color: #F7F7F7;
+
+}
+.home_fourth_title{
+  width: 100%;
+}
+.home_fourth_title h2{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #445189;
+  font-size: 30px;
+}
+.home_fourth_boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 35px;
+}
+.home_fourt_box{
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  min-width: 400px;
+  width: 750px;
+  background-color: #ffff;
+}
+.home_fourt_box_img{
+  min-width: 200px;
+  width: 100%;
+}
+.home_fourt_box_img img{
+  width: 90%;
+}
+.home_fourt_box_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home_fourt_box_info_text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home_fourt_box_info_text h3{
+  color: #445189;
+  font-size: 22px;
+}
+.home_fourt_box_info_text p{
+  color: #79889E;
+}
+.home_fourt_box_aivine{
+  color: #EA9DE9;
+  font-size: 22px;
+}
+
+
+
+
+
+.home_sixth{
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+}
+.home_seventh{
+  padding: 20px 50px;
+  width: 100%;
+  background-color: #F7F7F7;
+}
+.home_seventh_title{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.home_seventh_title h2{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #445189;
+}
+.home_seventh_images{
+  display: flex;
+  justify-content: space-evenly;
+
+}
 /*End Home blade*/
 /*Start Contact blade*/
 .contact{
@@ -192,13 +402,21 @@ left: -30%;
 }
 .contact_first_text{
   text-transform: uppercase;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 40%; */
+          /* margin: -25px 0 0 -25px; */
+  /* transform: translate(-25%, -50%); */
+  /* font-size: 60px; */
+  /* color:#FFF; */
+  left: 0;
+  margin-top: 0px;
   position: absolute;
+  text-align: center;
   top: 50%;
-  left: 40%;
-  /* margin: -25px 0 0 -25px; */
-  transform: translate(-25%, -50%);
-  font-size: 60px;
-  color:#FFF;
+  width: 100%;
+  color: #ffff;
+  font-size: 40px;
 }
 .contanier {
   padding: 20px 70px;
