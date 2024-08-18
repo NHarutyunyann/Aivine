@@ -9,18 +9,19 @@
 
 @section('content')
    
-
+{{-- 
 <div class='home'>
     <div class='homeblock1'>
-        {{-- <img src="/images/aivine/homeImg1.png" alt="images" > --}}
         <img class='home_first_image' src="/images/aivine/homeFirstImage.png" alt="images" >
         <p class="home_first_text">Thermolysis - Galvanic Blend Electrolysis Permanent, painless Hair Removal System</p>
         <button class="home_first_btn">ORDER</button>
     </div>
 </div>
+--}}
+
 <div class="home_second">
     <div class="home_second_title">
-        <h1>AIVINE SYSTEM INCLUDES</h1>
+        <h2>AIVINE SYSTEM INCLUDES</h2>
     </div>
     <div class="home_second_boxes">
         <div class="home_second_box">
@@ -70,6 +71,7 @@
         </div>
     </div>
 </div>
+
 <div class="home_third">
     <div class="home_third_title">
         <h2>General view of the AIVINE equipment</h2>
@@ -131,13 +133,15 @@
     </div>
 </div>
 
+
+
 <div class="home_sixth">
     <img src="/images/aivine/sixth.png" alt="images">
 </div>
 
 <div class="home_seventh">
     <div class="home_seventh_title">
-        <h2>By purchasing our equipment, you will become a market-leading professional.</h2>
+        <p>By purchasing our equipment, you will become a market-leading professional.</p>
     </div>
     <div class="home_seventh_images">
         <img src="/images/aivine/seventh1.png" alt="images">
@@ -145,7 +149,58 @@
     </div>
 </div>
 
+<div class="home_eighth">
+    <div class="home_eighth_title">
+        <p>With Aivine, you provide the maximum for your clients.</p>
+    </div>
+    <div class="home_eighth_info">
+        <div class="home_eighth_boxe">
+            <img src="/images/aivine/eighth1.png" alt="images">
+            <p>Excellent outcome</p>
+        </div>
+        <div class="home_eighth_boxe">
+            <img src="/images/aivine/eighth2.png" alt="images">
+            <p>Painless procedure</p>
+        </div>
+        <div class="home_eighth_boxe">
+            <img src="/images/aivine/eighth3.png" alt="images">
+            <p>Permanent results</p>
+        </div>
+    </div>
+</div>
 
+
+
+{{-- <div class="home_ninth">
+    <div class="home_ninth_image">
+        <img src="/images/aivine/ninth1.svg" alt="image">
+    </div>
+    <div class="home_ninth_order_box">
+        <p>We also teach you how to use it for free, both online and offline, in case you purchase.</p>
+        <a href="/contact">ORDER</a>
+    </div>
+</div> --}}
+
+
+<div class="home_tenth">
+    <div class="home_tenth_title">
+        <p>The steps required to complete the order.</p>
+    </div>
+    <div class="home_tenth_info">
+        <div class="home_tenth_info_box">
+            <h3>01</h3>
+            <p>Fill in your information.</p>
+        </div>
+        <div class="home_tenth_info_box">
+            <h3>02</h3>
+            <p>Please wait for our call.</p>
+        </div>
+        <div class="home_tenth_info_box">
+            <h3>03</h3>
+            <p>Within a few days, you will obtain your Aivine.</p>
+        </div>
+    </div>
+</div>
 
 
 @endsection
