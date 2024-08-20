@@ -98,6 +98,13 @@
             </div>
             <div class="home_third_image">
                 <img src="/images/aivine/third.png" alt="images">
+                <div class="home_third_info1">
+                    <p>A  PROBE STYLUS</p>
+                    <p>A probe stylus containing a connecting cable</p>
+                <img src="/images/aivine/slack.svg" alt="images">
+                </div>
+                
+
             </div>
         </div>
 

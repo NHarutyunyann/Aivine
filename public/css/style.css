@@ -377,6 +377,12 @@ left: -30%;
 .home_third_image{
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.home_third_info1{
+  position: absolute;
+  top: 52%;
+  left: 9%;
 }
 .home_third_image img{
   width: 50%;
