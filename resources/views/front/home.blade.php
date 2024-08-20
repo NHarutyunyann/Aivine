@@ -21,6 +21,7 @@
                 <button class="home_first_btn">ORDER</button>
                
             </div> 
+            <div class="home_first_2_totall">
             <div class="home_first_2">
                 <img class="contact_first2_img" src="/images/aivine/first2.png" alt="images">
                 <div class="home_first_2_info">
@@ -30,6 +31,8 @@
                     <div class="home_first_2_info_text_name">-<p>AIVINE Beauty & ESTHETICS</p>-</div>
                 </div>
             </div>
+            </div>
+           
           
         </div>
 

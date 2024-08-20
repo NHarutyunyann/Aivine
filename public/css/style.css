@@ -198,16 +198,25 @@ left: -30%;
   background-color: #ffff;
   border: none;
 }
-
+.home_first_2_totall{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
 .home_first_2{
-  border: 1px solid red;
+  background-color: white;
   width: 1200px;
   min-width: 300px;
   display: flex;
   align-items: center;
   height: 235px;
   justify-content: space-between;
+  overflow: hidden;
+  position: absolute;
+  top: -100px;
+  z-index: 1;
 }
 .home_first_2_info{
   width: 72%;
@@ -227,7 +236,7 @@ left: -30%;
 
 .home_second{
   width: 100%;
-  padding: 20px 50px;
+  padding: 200px 50px 20px;
   background-color: #F7F7F7;
   display: flex;
   flex-direction: column;
