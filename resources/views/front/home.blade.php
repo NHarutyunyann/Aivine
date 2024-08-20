@@ -16,8 +16,8 @@
         <p class="home_first_text">Thermolysis - Galvanic Blend Electrolysis Permanent, painless Hair Removal System</p>
         <button class="home_first_btn">ORDER</button>
     </div>
-</div>
---}}
+</div> --}}
+
 
 <div class="home_second">
     <div class="home_second_title">
@@ -171,15 +171,19 @@
 
 
 
-{{-- <div class="home_ninth">
+<div class="home_ninth">
     <div class="home_ninth_image">
         <img src="/images/aivine/ninth1.svg" alt="image">
+        <div class="home_ninth_order_box">
+            <p>We also teach you how to use it for free, both online and offline, in case you purchase.</p>
+            <a href="/contacts">ORDER</a>
+        </div>
     </div>
-    <div class="home_ninth_order_box">
+    {{-- <div class="home_ninth_order_box">
         <p>We also teach you how to use it for free, both online and offline, in case you purchase.</p>
         <a href="/contact">ORDER</a>
-    </div>
-</div> --}}
+    </div> --}}
+</div>
 
 
 <div class="home_tenth">
