@@ -16,13 +16,13 @@
     <div class="home">
         <div class='contact_first'>
             <img class="contact_first_img" src="/images/aivine/homefirstimg.svg" alt="images">
-            <div class="contact_first_text">
-                <p class="">Thermolysis - Galvanic Blend Electrolysis Permanent, painless Hair Removal System</p>
-                <button class="home_first_btn">ORDER</button>
-               
-            </div> 
+                <div class="contact_first_text">
+                    <p class="">Thermolysis - Galvanic Blend Electrolysis Permanent, painless Hair Removal System</p>
+                    <button class="home_first_btn">ORDER</button>
+
+                </div> 
             <div class="home_first_2_totall">
-            <div class="home_first_2">
+                <div class="home_first_2">
                 <img class="contact_first2_img" src="/images/aivine/first2.png" alt="images">
                 <div class="home_first_2_info">
                     <p class="home_first_2_info_text">We offer a perfect needle hair removal systems that will produce 100%
