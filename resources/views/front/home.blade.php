@@ -28,7 +28,7 @@
                             results and help you grow the number of customers. Outstanding for a professional salon and Medispa
                             setting.
                         </p>
-                        <div class="home_first_2_info_text_name">-<p>AIVINE Beauty & ESTHETICS</p>-</div>
+                        <div class="home_first_2_info_text_name">-<p class="home_first_2_info_text_Aivine">AIVINE Beauty & ESTHETICS</p>-</div>
                     </div>
                 </div>
             </div>
