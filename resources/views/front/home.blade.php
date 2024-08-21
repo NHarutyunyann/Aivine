@@ -32,10 +32,7 @@
                     </div>
                 </div>
             </div>
-           
-          
         </div>
-
       
 
         <div class="home_second">
@@ -97,7 +94,7 @@
                 <p>PRICE 18.000$</p>
             </div>
             <div class="home_third_image">
-                <img src="/images/aivine/third.png" alt="images">
+                <img src="/images/aivine/frame.png" alt="images">
             </div>
         </div>
 
@@ -210,10 +207,6 @@
                     <a href="/contacts">ORDER</a>
                 </div>
             </div>
-            {{-- <div class="home_ninth_order_box">
-        <p>We also teach you how to use it for free, both online and offline, in case you purchase.</p>
-        <a href="/contact">ORDER</a>
-    </div> --}}
         </div>
 
 

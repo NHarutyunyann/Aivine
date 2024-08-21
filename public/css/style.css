@@ -234,7 +234,7 @@ left: -30%;
   }
 }
 @media screen and (max-width: 425px){
-  .contact_first_text p{
+  .contact_first_text{
     font-size: 12px;
   }
 }
