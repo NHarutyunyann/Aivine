@@ -28,7 +28,7 @@
                             results and help you grow the number of customers. Outstanding for a professional salon and Medispa
                             setting.
                         </p>
-                        <div class="home_first_2_info_text_name">-<p>AIVINE Beauty & ESTHETICS</p>-</div>
+                        <div class="home_first_2_info_text_name">-<p class="home_first_2_info_text_Aivine">AIVINE Beauty & ESTHETICS</p>-</div>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,14 @@
                 <p>PRICE 18.000$</p>
             </div>
             <div class="home_third_image">
-                <img src="/images/aivine/frame.png" alt="images">
+                <img src="/images/aivine/third.png" alt="images">
+                <div class="home_third_info1">
+                    <p>A  PROBE STYLUS</p>
+                    <p>A probe stylus containing a connecting cable</p>
+                <img src="/images/aivine/slack.svg" alt="images">
+                </div>
+                
+
             </div>
         </div>
 
