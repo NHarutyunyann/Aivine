@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="page">
         <header class="header">
             <div class="head header_left">
                 <img src="/images/aivine/headerLeftrococo.png" alt="" class="header_left_background_img">
@@ -44,13 +44,15 @@
                     </a>
                     <a class="footer_button"><p class="footer_button_text">TO ORDER</p></a>
                     <div class="copyright_box">
-                        <p class="copyright_text">© 2024, All Rights Reserved by <a href="https://codeorigins.am/"
-                        target="_blank" class='codeOrigins'>Codeorigins.am</a></p>
+                        <p class="copyright_text">© 2024, All Rights Reserved by
+                             <a href="https://codeorigins.am/" target="_blank" class='codeOrigins'>Codeorigins.am</a>
+                        </p>
                     </div>
                 </div>
-                <img src="/images/aivine/footer22.png" alt="" class="footer_right_logo">
+                {{-- <img src="/images/aivine/footer22.png" alt="" class="footer_right_logo"> --}}
             </div>
-    
+            <img src="/images/aivine/Black.svg" alt="img" class="footer_right_logo">
+
     </div>
     
     @yield('script')

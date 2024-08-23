@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.page{
+  position: relative;
+
+}
 /*start header*/
 .header {
   height: 70px;
@@ -25,7 +29,7 @@ position: relative;
 }
 .header_left_background_img {
   object-fit:contain;
-  width: 80%;
+  width: 75%;
   margin-top: 68px;
   margin-top: 70px;
 }
@@ -94,7 +98,6 @@ position: relative;
 
 /*start footer*/
 .footer {
-  margin-top: 100px;
   width: 100%;
   height: 250px;
   position: relative;
@@ -146,20 +149,26 @@ left: -30%;
   font-weight: bold;
   color: #445189;
 }
+.codeOrigins{
+  color:#445189;
+  font-size: 18px;
+  text-decoration: none;
+}
 .copyright_box {
   padding-top: 3px;
   border-top: 2px solid white;
   align-self: flex-end;
 }
 .copyright_text {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff
 }
 .footer_right_logo {
   position:absolute;
   bottom: 1px;
   right:1px;
-  max-width: 212px;
+  /* max-width: 212px; */
+  max-width: 376px;
   min-width: 100px;
   max-height: 600px;
   min-height: 40px; 
@@ -379,14 +388,10 @@ left: -30%;
   justify-content: center;
   position: relative;
 }
-.home_third_info1{
-  position: absolute;
-  top: 52%;
-  left: 9%;
-}
+
 .home_third_image img{
-  width: 50%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 1000px;
 }
 @media screen and (max-width: 950px) {
   .home_third_title h2{
@@ -449,13 +454,17 @@ left: -30%;
 .home_fourt_box_info_text h3{
   color: #445189;
   font-size: 22px;
+  text-align: center;
 }
 .home_fourt_box_info_text p{
   color: #79889E;
+  font-size: 18px;
+  text-align: center;
 }
-.home_fourt_box_aivine{
-  color: #EA9DE9;
+
+.home_fourt_box_aivine p{
   font-size: 22px;
+  color: #EA9DE9;
 }
 @media screen and (max-width: 800px) {
   .home_fourth{
@@ -480,6 +489,18 @@ left: -30%;
   .home_fourt_box_aivine{
     display: flex;
     justify-content: center;
+  }
+  .home_fourt_box_aivine p {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .home_fourt_box_info_text h3{
+    font-size: 18px;
+  }
+  .home_fourt_box_info_text p{
+    font-size: 14px;
   }
 }
 
@@ -511,7 +532,7 @@ left: -30%;
   justify-content: center;
 }
 .home_seventh_title p{
-  align-items: center;
+  text-align: center;
   font-size: 30px;
   text-transform: uppercase;
   color: #445189;
@@ -564,18 +585,17 @@ left: -30%;
   color: #445189;
 }
 .home_eighth_info{
+  width: 100%;
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 .home_eighth_boxe{
   width: 30%;
-  min-width: 300px;
   display: flex;
   gap: 20px;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .home_ninth{
   width: 100%;
@@ -594,8 +614,8 @@ left: -30%;
 .home_ninth_order_box{
   min-width: 200px;
   min-height: 125px;
-  width: 30%;
-  background-color:#a1a1a1;
+  width: 300px;
+  background-color: #ebe2e3;
   display: flex;
   gap: 15px;
   flex-direction: column;
@@ -646,7 +666,8 @@ left: -30%;
 }
 @media screen and (max-width: 700px) {
   .home_ninth_image img{
-    display: none;
+    /* display: none; */
+
   }
   .home_ninth{
     padding: 20px;
@@ -655,12 +676,21 @@ left: -30%;
     left: 0;
     top: 0;
     position: unset;
-    width: 400px;
   }
   .home_ninth_image{
     display: flex;
     justify-content: center;
     align-items: center;
+    position:unset;
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width: 445px) {
+  .home_eighth_info{
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
   }
   
 }
@@ -686,14 +716,12 @@ left: -30%;
 }
 .home_tenth_info{
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-
+  justify-content: space-between;
+  gap: 10px;
 }
 .home_tenth_info_box{
-  min-width: 325px;
-  width: 30%;
+  min-width: 200px;
+  width: 325px;
   height: 200px;
   background-color: #F7F7F7;
   display: flex;
@@ -701,6 +729,7 @@ left: -30%;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding: 10px;
 }
 .home_tenth_info_box h3{
   font-size: 30px;
@@ -719,6 +748,13 @@ left: -30%;
     font-size: 24px;
   }
 }
+@media screen and (max-width: 670px) {
+  .home_tenth_info{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
 /*End Home blade*/
 /*Start Contact blade*/
 .contact{
@@ -726,7 +762,7 @@ left: -30%;
   margin: 0 0 40px 0;
 }
 .contact_first{
-  margin-top: 68px;
+  margin-top: 64px;
   width: 100%;
   position: relative;
 }
@@ -805,7 +841,7 @@ left: -30%;
   height: 50px;
   background-image: linear-gradient(to right, #445189, #B99A9E);
   padding: 20px;
-  color: #1a4c5b;
+  /* color: #1a4c5b; */
   font-size: 18px;
   border: none;
 }
@@ -819,7 +855,7 @@ left: -30%;
   width: 100%;
   background-image: linear-gradient(to right, #445189, #B99A9E);
   padding: 20px;
-  color: #1a4c5b;
+  /* color: #1a4c5b; */
   font-size: 18px;
   border: none;
 }
@@ -864,7 +900,7 @@ left: -30%;
   .home_first_2 {
     position: unset;
     margin-top: 20px;
-    background-color: #e9ccd0;
+    background-color: #ebe2e3;
   }
 }
 
@@ -915,6 +951,74 @@ left: -30%;
   }
 }
 
+
+
+
+.burgerOpenDiv.show {
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 100%;
+}
+
+.bigDiv{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:1px;
+  left:1px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.modalsend {
+  max-width: 420px;
+  height: 140px;
+  border-radius:6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-image: linear-gradient(to right, #445189bf, #B99A9E);
+  margin: 15px;
+}
+.modalText {
+  font-size: 16px;
+  text-align: center;
+}
+.moodalClose {
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalButtonText{
+  font-size: 16px;
+  color:rgb(0, 0, 0);
+  margin: 0;
+}
+.modalButtonText:hover{
+  color: #445189;
+}
+.modalTExtSuccess{
+  font-size: 18px;
+}
+.modalTextError{
+  padding: 10px;
+  color: red !important;
+}
+.send_btn{
+  width: 60px;
+  height: 30px;
+  background-color: #ffff;
+  border: none;
+}
+.send_btn:hover{
+  cursor: pointer;
+}
 
 /*End Contact blade*/
 

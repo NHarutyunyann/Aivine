@@ -32,6 +32,19 @@
                 <div class="send_message_btn">
                     <button>Order</button>
                 </div>
+                @if(session('success') || session('error message'))
+                    <div class="modal fade show" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" style="display: block;">
+                        <div class="bigDiv ">
+                            <div class="modalsend show">
+                                <p class='modalText modalTextError'>@if(session('error message'))@lang('main.error message') @endif</p>
+                                <p class='modalText modalTExtSuccess'>@if(session('success'))@lang('main.success message') @endif</p>
+                                <button id="moodalClose" type="button" class="btn send_btn">
+                                    <p class="modalButtonText">@lang('main.close')</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                @endif
             </form>
         </div>
     </div>
@@ -41,5 +54,14 @@
 
 @endsection
 @section('script')
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $('#moodalClose').click(function() {
+            // $('#successModal').modal('hide');
+            $(".show").remove();
+            $("#successModal").hide();
+        });
+    })
+// </script>
 @endsection

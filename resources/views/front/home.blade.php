@@ -40,68 +40,27 @@
                 <h2>AIVINE SYSTEM INCLUDES</h2>
             </div>
             <div class="home_second_boxes">
-                <div class="home_second_box">
-                    <div class="home_second_image">
-                        <img src="/images/aivine/second.png" alt="images">
+                @foreach($detels as $detel)
+                    <div class="home_second_box">
+                        <div class="home_second_image">
+                            <img src="{{ asset('storage/media/' . $detel->mainImage->path . '.' . $detel->mainImage->format) }}" alt="images">
+                        </div>
+                        <div class="home_second_info">
+                            <h4 class="home_second_info_title">{{ $detel->title }}</h4>
+                            <p class="home_second_info_text">{{ $detel->content }}</p>
+                        </div>
                     </div>
-                    <div class="home_second_info">
-                        <h4 class="home_second_info_title">A PROBE STYLUS</h4>
-                        <p class="home_second_info_text">Aivine is a box that is 28cm wide and 21.5 in length.</p>
-                    </div>
-                </div>
-                <div class="home_second_box">
-                    <div class="home_second_image">
-                        <img src="/images/aivine/second.png" alt="images">
-                    </div>
-                    <div class="home_second_info">
-                        <h4 class="home_second_info_title">A PROBE STYLUS</h4>
-                        <p class="home_second_info_text">Aivine is a box that is 28cm wide and 21.5 in length.</p>
-                    </div>
-                </div>
-                <div class="home_second_box">
-                    <div class="home_second_image">
-                        <img src="/images/aivine/second.png" alt="images">
-                    </div>
-                    <div class="home_second_info">
-                        <h4 class="home_second_info_title">A PROBE STYLUS</h4>
-                        <p class="home_second_info_text">Aivine is a box that is 28cm wide and 21.5 in length.</p>
-                    </div>
-                </div>
-                <div class="home_second_box">
-                    <div class="home_second_image">
-                        <img src="/images/aivine/second.png" alt="images">
-                    </div>
-                    <div class="home_second_info">
-                        <h4 class="home_second_info_title">A PROBE STYLUS</h4>
-                        <p class="home_second_info_text">Aivine is a box that is 28cm wide and 21.5 in length.</p>
-                    </div>
-                </div>
-                <div class="home_second_box">
-                    <div class="home_second_image">
-                        <img src="/images/aivine/second.png" alt="images">
-                    </div>
-                    <div class="home_second_info">
-                        <h4 class="home_second_info_title">A PROBE STYLUS</h4>
-                        <p class="home_second_info_text">Aivine is a box that is 28cm wide and 21.5 in length.</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 
         <div class="home_third">
             <div class="home_third_title">
                 <h2>General view of the AIVINE equipment</h2>
-                <p>PRICE 18.000$</p>
+                <p>PRICE {{ $product->price }}$</p>
             </div>
             <div class="home_third_image">
-                <img src="/images/aivine/third.png" alt="images">
-                <div class="home_third_info1">
-                    <p>A  PROBE STYLUS</p>
-                    <p>A probe stylus containing a connecting cable</p>
-                <img src="/images/aivine/slack.svg" alt="images">
-                </div>
-                
-
+                <img src="{{ asset('storage/media/' . $product->mainImage->path . '.' . $product->mainImage->format) }}" alt="images">
             </div>
         </div>
 
@@ -111,60 +70,22 @@
                 <h2>We care not only about hair removal, but also your safety, comfort, and beauty.</h2>
             </div>
             <div class="home_fourth_boxes">
-                <div class="home_fourt_box">
-                    <div class="home_fourt_box_img">
-                        <img src="/images/aivine/fourt.png" alt="images">
-                    </div>
-                    <div class="home_fourt_box_info">
-                        <div class="home_fourt_box_info_text">
-                            <h3>How Many Treatments Does It Take?</h3>
-                            <p>Many hairs will be eliminated with only one treatment, but some will need two or more
-                                treatments to achieve permanency. Electrolysis involves a series of treatments over a period
-                                of 1-3 months. The overall length of time depends on the amount of hair, its coarseness, and
-                                the cause of the excess hair, but once the dermal papilla has been eliminated, the hair is
-                                dead and will not grow again.</p>
+                @foreach($questions as $question)
+                    <div class="home_fourt_box">
+                        <div class="home_fourt_box_img">
+                            <img src="{{ asset('storage/media/' . $question->mainImage->path . '.' . $question->mainImage->format) }}" alt="images">
                         </div>
-                        <div class="home_fourt_box_aivine">
-                            <p>- AIVINE Beauty & ESTHETICS -</p>
+                        <div class="home_fourt_box_info">
+                            <div class="home_fourt_box_info_text">
+                                <h3>{{ $question->title }}</h3>
+                                <p>{{ $question->content}}</p>
+                            </div>
+                            <div class="home_fourt_box_aivine">
+                                <p>- AIVINE Beauty & ESTHETICS -</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="home_fourt_box">
-                    <div class="home_fourt_box_img">
-                        <img src="/images/aivine/fourt2.png" alt="images">
-                    </div>
-                    <div class="home_fourt_box_info">
-                        <div class="home_fourt_box_info_text">
-                            <h3>How Many Treatments Does It Take?</h3>
-                            <p>Many hairs will be eliminated with only one treatment, but some will need two or more
-                                treatments to achieve permanency. Electrolysis involves a series of treatments over a period
-                                of 1-3 months. The overall length of time depends on the amount of hair, its coarseness, and
-                                the cause of the excess hair, but once the dermal papilla has been eliminated, the hair is
-                                dead and will not grow again.</p>
-                        </div>
-                        <div class="home_fourt_box_aivine">
-                            <p>- AIVINE Beauty & ESTHETICS -</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="home_fourt_box">
-                    <div class="home_fourt_box_img">
-                        <img src="/images/aivine/fourt2.png" alt="images">
-                    </div>
-                    <div class="home_fourt_box_info">
-                        <div class="home_fourt_box_info_text">
-                            <h3>How Many Treatments Does It Take?</h3>
-                            <p>Many hairs will be eliminated with only one treatment, but some will need two or more
-                                treatments to achieve permanency. Electrolysis involves a series of treatments over a period
-                                of 1-3 months. The overall length of time depends on the amount of hair, its coarseness, and
-                                the cause of the excess hair, but once the dermal papilla has been eliminated, the hair is
-                                dead and will not grow again.</p>
-                        </div>
-                        <div class="home_fourt_box_aivine">
-                            <p>- AIVINE Beauty & ESTHETICS -</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 
@@ -179,8 +100,9 @@
                 <p>By purchasing our equipment, you will become a market-leading professional.</p>
             </div>
             <div class="home_seventh_images">
-                <img src="/images/aivine/seventh1.png" alt="images">
-                <img src="/images/aivine/seventh2.png" alt="images">
+                @foreach($product->attachments as $attachment)
+                    <img src="{{ asset('storage/media/' . $attachment->path . '.' . $attachment->format) }}" alt="images">
+                @endforeach
             </div>
         </div>
 

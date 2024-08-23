@@ -46,13 +46,13 @@
                     </div>
                 </li>
 
-                <li class="nav-item menu">
+                {{-- <li class="nav-item menu">
                     <a href="{{ route('settings.general') }}" class="nav-link"><i
                             class="nav-icon fas fa-sliders-h"></i><span>Settings</span></a>
                     <div class="subMenu">
                         <a href="{{ route('settings.general') }}" class="nav-link"><span>General</span></a>
                     </div>
-                </li>
+                </li> --}}
 
                 <li class="nav-item menu">
                     <a href="{{ route('questions.index') }}" class="nav-link"><i class="far fa-comment"></i>
@@ -63,8 +63,7 @@
                         <a href="{{ route('questions.create') }}" class="nav-link"><span>Add New</span></a>
                     </div>
                 </li>
-
-
+                
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

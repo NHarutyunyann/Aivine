@@ -33,7 +33,6 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
 
     Route::get('/roles/draw', [\App\Http\Controllers\Admin\RoleController::class, 'draw'])->name('admin.role.draw');
     Route::resource('roles', \App\Http\Controllers\Admin\RoleController::class);
-
     Route::get('/logout', [\App\Http\Controllers\Admin\UserController::class, 'logout'])->name('admin.user.logout');
 
     //Settings
@@ -42,24 +41,11 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::resource('settings', \App\Http\Controllers\Admin\SettingController::class);
 
     // QUESTIONS
-    // Route::get('/questions/draw', [\App\Http\Controllers\Admin\QuestionController::class, 'draw'])->name('admin.questions.draw');
-    // Route::post('/questions/bulk-actions', [\App\Http\Controllers\Admin\QuestionController::class, 'bulkActions']);
-    // Route::resource('questions', \App\Http\Controllers\Admin\QuestionController::class);
     Route::get('/questions/search', [\App\Http\Controllers\Admin\QuestionController::class, 'search'])->name('admin.questions.search');
     Route::post('/questions/update-positions', [\App\Http\Controllers\Admin\QuestionController::class, 'updatePositions'])->name('admin.questions.updatePositions');
     Route::get('/questions/draw', [\App\Http\Controllers\Admin\QuestionController::class, 'draw'])->name('admin.questions.draw');
     Route::any('/questions/bulk-actions', [\App\Http\Controllers\Admin\QuestionController::class, 'bulkActions']);
     Route::resource('questions', \App\Http\Controllers\Admin\QuestionController::class);
-
-    //PARTNERS
-    // Route::get('/partners/draw', [\App\Http\Controllers\Admin\PartnerController::class, 'draw'])->name('admin.partners.draw');
-    // Route::post('/partners/bulk-actions', [\App\Http\Controllers\Admin\PartnerController::class, 'bulkActions']);
-    // Route::resource('partners', \App\Http\Controllers\Admin\PartnerController::class);
-
-    //Menus
-    // Route::get('/menus/draw', [\App\Http\Controllers\Admin\MenuController::class, 'draw'])->name('admin.menus.draw');
-    // Route::post('/menus/deleteSelected', [\App\Http\Controllers\Admin\MenuController::class, 'deleteSelected'])->name('admin.menus.deleteSelected');
-    // Route::resource('menus', \App\Http\Controllers\Admin\MenuController::class);
 
     //ATTACHMENTS
     Route::resource('attachments', \App\Http\Controllers\Admin\AttachmentController::class);
@@ -68,8 +54,4 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::post('/upload-file', [\App\Http\Controllers\Admin\MediaController::class, 'uploadFile'])->name('media.uploadFile');
     Route::post('/slugify', [\App\Http\Controllers\Admin\DashboardController::class, 'slugify'])->name('text.slugify');
 
-    // SLIDERS
-    // Route::get('/sliders/draw', [\App\Http\Controllers\Admin\SliderController::class, 'draw'])->name('admin.sliders.draw');
-    // Route::post('/sliders/bulk-actions', [\App\Http\Controllers\Admin\SliderController::class, 'bulkActions']);
-    // Route::resource('sliders', \App\Http\Controllers\Admin\SliderController::class);
 });
