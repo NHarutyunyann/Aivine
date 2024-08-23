@@ -9,7 +9,7 @@
 }
 /*start header*/
 .header {
-  height: 70px;
+  height: 80px;
   width: 100%;
   background-image: linear-gradient(to right, #445189bf, #B99A9E);
   opacity: 0.9;
@@ -30,8 +30,7 @@ position: relative;
 .header_left_background_img {
   object-fit:contain;
   width: 75%;
-  margin-top: 68px;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 .header_left_logo{ 
   position: absolute;
@@ -762,7 +761,7 @@ left: -30%;
   margin: 0 0 40px 0;
 }
 .contact_first{
-  margin-top: 64px;
+  margin-top: 80px;
   width: 100%;
   position: relative;
 }
