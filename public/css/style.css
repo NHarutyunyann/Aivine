@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", sans-serif;
 }
 .page{
   position: relative;
@@ -261,7 +262,8 @@ left: -30%;
 
 }
 .home_first_2_info_text_Aivine {
-  color: #445189;
+  /* color: #445189; */
+  color: #EA9DE9;
 }
 
 
