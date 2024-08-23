@@ -342,7 +342,7 @@ left: -30%;
 }
 @media screen and (max-width: 950px) {
   .home_second_title h2{
-    font-size: 24px;
+    font-size: 20px;
   }
   .home_second_info_title{
     font-size: 18px;
@@ -396,7 +396,7 @@ left: -30%;
 }
 @media screen and (max-width: 950px) {
   .home_third_title h2{
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -418,7 +418,7 @@ left: -30%;
   text-align: center;
   text-transform: uppercase;
   color: #445189;
-  font-size: 30px;
+  font-size: 25px;
 }
 .home_fourth_boxes{
   display: flex;
@@ -472,7 +472,7 @@ left: -30%;
     padding: 20px;
   }
   .home_fourth_title h2{
-    font-size: 22px;
+    font-size: 20px;
   }
   .home_fourt_box{
     flex-direction: column-reverse;
@@ -646,7 +646,10 @@ left: -30%;
 }
 @media screen and (max-width: 950px) {
   .home_eighth_title p{
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .home_eighth_boxe p{
+    font-size: 14px;
   }
   .home_eighth{
     padding: 20px;
@@ -655,7 +658,7 @@ left: -30%;
     left: 55%;
   }
   .home_ninth_order_box p {
-    font-size: 17px;
+    font-size: 14px;
   }
   .home_ninth_order_box a {
     /* width: 180px;
@@ -746,7 +749,10 @@ left: -30%;
     padding: 20px;
   }
   .home_tenth_title p{
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .home_tenth_info_box p{
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 670px) {
@@ -812,7 +818,7 @@ left: -30%;
 .send_message_title {
   text-transform: uppercase;
   text-align: center;
-  font-size: 36px;
+  font-size: 25px;
   color: #445189;
   font-weight: 700;
 }
@@ -928,16 +934,17 @@ left: -30%;
     padding: 0;
   }
 }
-@media screen and (max-width: 720px){
-  .contact_first_text {
-   
-    font-size: 18px;
-  }
-}
+
 
 @media screen and (max-width: 720px){
   .contact_first_text {
     font-size: 18px;
+  }
+  .send_message_title{
+    font-size: 18px;
+  }
+  .contanier {
+    padding: 20px;
   }
 }
 @media screen and (max-width: 500px) {
