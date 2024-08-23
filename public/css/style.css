@@ -293,6 +293,9 @@ left: -30%;
   color: #445189;
   font-size: 30px;
 }
+.home_second_title h2 {
+  font-size: 30px;
+}
 .home_second_boxes{
   width: 100%;
   display: flex;
