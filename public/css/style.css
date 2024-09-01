@@ -199,6 +199,9 @@ left: -30%;
   background-color: #ffff;
   border: none;
 }
+.home_first_btn:hover{
+  cursor: pointer;
+}
 @media screen and (max-width: 768px) {
   .home_first_btn{
     width: 170px;
