@@ -94,7 +94,9 @@
 
 
         <div class="home_sixth">
-            <img src="/images/aivine/sixth.png" alt="images">
+            <a href="/">
+                <img src="/images/aivine/sixth.png" alt="images">
+            </a>
         </div>
 
         <div class="home_seventh">
