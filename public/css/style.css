@@ -508,6 +508,10 @@ left: -30%;
   padding: 20px;
   justify-content: center;
 }
+.home_sixth a{
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 800px) {
   .home_sixth img{
     width: 80%;
@@ -952,6 +956,7 @@ left: -30%;
   align-items: center;
 }
 .modalsend {
+  padding: 8px;
   max-width: 420px;
   height: 140px;
   border-radius:6px;
@@ -961,6 +966,10 @@ left: -30%;
   align-items:center;
   background-image: linear-gradient(to right, #445189bf, #B99A9E);
   margin: 15px;
+  gap: 8px;
+}
+.modalsend a{
+  text-decoration: none;
 }
 .modalText {
   font-size: 16px;

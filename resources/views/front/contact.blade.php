@@ -39,7 +39,9 @@
                                 <p class='modalText modalTextError'>@if(session('error message'))@lang('main.error message') @endif</p>
                                 <p class='modalText modalTExtSuccess'>@if(session('success'))@lang('main.success message') @endif</p>
                                 <button id="moodalClose" type="button" class="btn send_btn">
-                                    <p class="modalButtonText">@lang('main.close')</p>
+                                    <a @if(session('success')) href="/" @endif>
+                                        <p class="modalButtonText">@lang('main.close')</p>
+                                    </a>
                                 </button>
                             </div>
                         </div>
