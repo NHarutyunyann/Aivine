@@ -9,12 +9,12 @@ class SettingsService {
     private $settings;
 
     const DEFAULT_SETTINGS = [
-        'phone_number1' => '+374 55 07 19 16',
-        'phone_number2' => '+374 94 48 86 93',
-        'gmail' => 'Dinnoli@gmail.com',
-        'address' => 'Ք․Երևան Արտաշեսյան 39',
-        'latitude' => '40.15596774926576',
-        'longitude' => '44.48084079325257',
+        'phone_number1' => '+374',
+        'phone_number2' => '+374',
+        'gmail' => '@gmail.com',
+        'address' => 'Ք․Երևան',
+        'latitude' => '40',
+        'longitude' => '44',
         'min_weight' => null,
         'min_late_debt_allowed' => 100,
         'min_weight_groups' => [],

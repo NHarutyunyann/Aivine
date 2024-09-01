@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title') Dinnoli</title>
+    <title>@yield('title') Aivine</title>
     <link rel="shortcut icon" href="{{ URL::asset('/images/favicon.ico') }}" type="image/x-icon" />
     <link rel="stylesheet" href="{{ asset('fonts/googleapis/fonts.googleapis.css') }}">
     <link rel="stylesheet" href="{{ asset('fontawesome-free/css/all.min.css') }}">

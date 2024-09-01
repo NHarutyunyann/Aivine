@@ -6,7 +6,6 @@
 }
 .page{
   position: relative;
-
 }
 /*start header*/
 .header {
@@ -21,7 +20,6 @@
   top: 0;
   z-index: 3;
 }
-
 .header_left {
 width: 50%;
 min-width: 190px;
@@ -40,7 +38,6 @@ position: relative;
   width: 30%;
   min-width: 115px;
 }
-
 .header_right{
   width: 50%;
   display: flex;
@@ -59,9 +56,6 @@ position: relative;
   font-size: 20px;
   font-weight: bold;
   color: white;
-}
-.header_right_li_a:hover {
-  
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -150,7 +144,7 @@ left: -30%;
   color: #445189;
 }
 .codeOrigins{
-  color:#445189;
+  color:#ffff;
   font-size: 18px;
   text-decoration: none;
 }
@@ -167,7 +161,6 @@ left: -30%;
   position:absolute;
   bottom: 1px;
   right:1px;
-  /* max-width: 212px; */
   max-width: 376px;
   min-width: 100px;
   max-height: 600px;
@@ -360,8 +353,6 @@ left: -30%;
 
 
 
-
-
 .home_third{
   width: 100%;
   padding: 20px 50px;
@@ -509,8 +500,6 @@ left: -30%;
 }
 
 
-
-
 .home_sixth{
   display: flex;
   padding: 20px;
@@ -521,7 +510,6 @@ left: -30%;
     width: 80%;
   }
 }
-
 
 
 .home_seventh{
@@ -566,9 +554,6 @@ left: -30%;
     width: 60%;
   }
 }
-
-
-
 
 
 .home_eighth{
@@ -664,8 +649,6 @@ left: -30%;
     font-size: 14px;
   }
   .home_ninth_order_box a {
-    /* width: 180px;
-    height: 45px; */
     max-width: 180px;
     height: 45px;
     font-size: 18px;
@@ -674,7 +657,6 @@ left: -30%;
 @media screen and (max-width: 700px) {
   .home_ninth_image img{
     /* display: none; */
-
   }
   .home_ninth{
     padding: 20px;
@@ -701,8 +683,6 @@ left: -30%;
   }
   
 }
-
-
 
 
 .home_tenth{
@@ -770,6 +750,7 @@ left: -30%;
 .contact{
   width: 100%;
   margin: 0 0 40px 0;
+  margin-bottom: 100px;
 }
 .contact_first{
   margin-top: 80px;
@@ -790,8 +771,6 @@ left: -30%;
   color: #ffff;
   font-size: 25px;
 }
-
-
 
 
 .contanier {
@@ -817,7 +796,6 @@ left: -30%;
 .send_message_info {
   width: 100%;
 }
-
 .send_message_title {
   text-transform: uppercase;
   text-align: center;
@@ -859,13 +837,11 @@ left: -30%;
 .message input::placeholder,
 .name_phone input::placeholder {
   color:#ffff;
-
 }
 .message input{
   width: 100%;
   background-image: linear-gradient(to right, #445189, #B99A9E);
   padding: 20px;
-  /* color: #1a4c5b; */
   font-size: 18px;
   border: none;
 }
@@ -893,13 +869,9 @@ left: -30%;
 }
 
 
-
-
 .contact_first_text p {
   padding: 0 25px 25px;
 }
-
-
 @media screen and (max-width: 1058px) {
   .contact_first_text {
     top: 25%
@@ -913,8 +885,6 @@ left: -30%;
     background-color: #ebe2e3;
   }
 }
-
-
 @media screen and (max-width: 1250px) {
   .contact {
     display: flex;
@@ -937,8 +907,6 @@ left: -30%;
     padding: 0;
   }
 }
-
-
 @media screen and (max-width: 720px){
   .contact_first_text {
     font-size: 18px;
@@ -963,8 +931,6 @@ left: -30%;
 }
 
 
-
-
 .burgerOpenDiv.show {
   background-color: white;
   position: absolute;
@@ -972,7 +938,6 @@ left: -30%;
   right: 0;
   width: 100%;
 }
-
 .bigDiv{
   width: 100%;
   height: 100%;
@@ -981,7 +946,7 @@ left: -30%;
   left:1px;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 .modalsend {
   max-width: 420px;
@@ -1030,7 +995,6 @@ left: -30%;
 .send_btn:hover{
   cursor: pointer;
 }
-
 /*End Contact blade*/
 
 

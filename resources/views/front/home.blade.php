@@ -18,7 +18,9 @@
             <img class="contact_first_img" src="/images/aivine/homefirstimg.svg" alt="images">
                 <div class="contact_first_text">
                     <p class="">Thermolysis - Galvanic Blend Electrolysis Permanent, painless Hair Removal System</p>
-                    <button class="home_first_btn">ORDER</button>
+                        <a class="home_first_btn" href="/contacts">
+                            <button class="home_first_btn">ORDER</button>
+                        </a>
                 </div> 
             <div class="home_first_2_totall">
                     <div class="home_first_2">

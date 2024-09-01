@@ -42,7 +42,7 @@
                     <a href="/">
                         <img src="/images/aivine/logo2.png" alt="" class="footer_left_logo">
                     </a>
-                    <a class="footer_button"><p class="footer_button_text">TO ORDER</p></a>
+                    <a class="footer_button" href="/contacts"><p class="footer_button_text">TO ORDER</p></a>
                     <div class="copyright_box">
                         <p class="copyright_text">© 2024, All Rights Reserved by
                              <a href="https://codeorigins.am/" target="_blank" class='codeOrigins'>Codeorigins.am</a>

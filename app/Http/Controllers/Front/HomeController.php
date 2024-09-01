@@ -31,7 +31,7 @@ class HomeController extends Controller{
         $address = $request->address;
         $msg = $request->message;
         if($name && $phone_number && $address && $msg){
-            Mail::to(['Harutyunya.n@mail.ru'])->send(new ContactForm(['name'=> $name, 'phone_number' => $phone_number, 'address' => $address, 'message' => $msg]));
+            Mail::to(['Harutyunya.n@mail.ru','allaavetyan70@gmail.com'])->send(new ContactForm(['name'=> $name, 'phone_number' => $phone_number, 'address' => $address, 'message' => $msg]));
             return redirect()->back()->with('success', '+');   
         }else{
             return redirect()->back()->with('error message', '+');  
