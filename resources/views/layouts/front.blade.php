@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="4KP0mHB-RKmQrJzLm98WkbdV-VDtF5LQeJvx1CVjkLA" />
     <link rel="icon" type="image/x-icon" href="/images/aivine/logo.png">
+    <link rel="icon" href="/path/to/favicon.ico">
     <title> @yield('title')</title>
     <meta name="description" content=" @yield('description')">
     <meta name="keywords" content=" @yield('keywords')">
