@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Hash;
 class HomeController extends Controller{
 
     public function index(){
-        // $data= 'aivinebeauty.com!@#'; dd(Hash::make($data));
         $detels = Detail::active()->get();
         $product = Product::active()->with('attachments')->first();
         $questions = Question::active()->get();
