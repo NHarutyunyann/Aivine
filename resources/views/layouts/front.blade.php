@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="4KP0mHB-RKmQrJzLm98WkbdV-VDtF5LQeJvx1CVjkLA" />
-    <link rel="icon" type="image/x-icon" href="/images/aivine/logo.png">
-    <link rel="icon" href="/images/aivine/logo.ico">
-    <title> @yield('title')</title>
+    {{-- <link rel="icon" type="image/x-icon" href="/images/aivine/logo.png"> --}}
+    <link rel="icon" href="/images/aivine/icon.ico">
+    <title>@yield('title')</title>
     <meta name="description" content=" @yield('description')">
     <meta name="keywords" content=" @yield('keywords')">
-    <link rel="canonical" href=" @yield('url')">
+    <link rel="canonical" href="@yield('url')">
     <link rel="stylesheet" href="/css/style.css">
     @yield('style')
     <meta name="csrf-token" content="{{ csrf_token() }}">
