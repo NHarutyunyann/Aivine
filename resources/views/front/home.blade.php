@@ -9,7 +9,7 @@
 @section('content')
     <div class="home">
         <div class='contact_first'>
-            <img class="contact_first_img" src="/images/aivine/homefirstimg.svg" alt="images">
+            <img class="contact_first_img" src="/images/aivine/homefirstimg.webp" alt="images">
                 <div class="contact_first_text">
                     <p class="">Thermolysis - Galvanic Blend Electrolysis Permanent, painless Hair Removal System</p>
                         <a class="home_first_btn" href="/contacts">
@@ -18,7 +18,7 @@
                 </div> 
             <div class="home_first_2_totall">
                     <div class="home_first_2">
-                    <img class="contact_first2_img" src="/images/aivine/first2.png" alt="images">
+                    <img class="contact_first2_img" src="/images/aivine/first2.webp" alt="images">
                     <div class="home_first_2_info">
                         <p class="home_first_2_info_text">We offer a perfect needle hair removal systems that will produce 100%
                             results and help you grow the number of customers. Outstanding for a professional salon and Medispa
@@ -89,7 +89,7 @@
 
         <div class="home_sixth">
             <a href="/">
-                <img src="/images/aivine/sixth.png" alt="images">
+                <img src="/images/aivine/sixth.webp" alt="images">
             </a>
         </div>
 
@@ -110,15 +110,15 @@
             </div>
             <div class="home_eighth_info">
                 <div class="home_eighth_boxe">
-                    <img src="/images/aivine/eighth1.png" alt="images">
+                    <img src="/images/aivine/eighth1.webp" alt="images">
                     <p>Excellent outcome</p>
                 </div>
                 <div class="home_eighth_boxe">
-                    <img src="/images/aivine/eighth2.png" alt="images">
+                    <img src="/images/aivine/eighth2.webp" alt="images">
                     <p>Painless procedure</p>
                 </div>
                 <div class="home_eighth_boxe">
-                    <img src="/images/aivine/eighth3.png" alt="images">
+                    <img src="/images/aivine/eighth3.webp" alt="images">
                     <p>Permanent results</p>
                 </div>
             </div>
@@ -128,7 +128,7 @@
 
         <div class="home_ninth">
             <div class="home_ninth_image">
-                <img src="/images/aivine/ninth1.svg" alt="image">
+                <img src="/images/aivine/ninth1.webp" alt="image">
                 <div class="home_ninth_order_box">
                     <p>We also teach you how to use it for free, both online and offline, in case you purchase.</p>
                     <a href="/contacts">ORDER</a>

@@ -9,7 +9,7 @@
 @section('content')
 <div class='contact'>
     <div class='contact_first'>
-        <img class="contact_first_img" src="/images/aivine/contactimage.svg" alt="images">
+        <img class="contact_first_img" src="/images/aivine/contactimage.webp" alt="images">
         <p class="contact_first_text">Fill in your information</p>
     </div>
     <div class="contanier">

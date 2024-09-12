@@ -20,9 +20,9 @@
     <div class="page">
         <header class="header">
             <div class="head header_left">
-                <img src="/images/aivine/headerLeftrococo.png" alt="" class="header_left_background_img">
+                <img src="/images/aivine/headerLeftrococo.webp" alt="" class="header_left_background_img">
                 <a href="/">
-                    <img src="/images/aivine/logo.png" alt="" class="header_left_logo">
+                    <img src="/images/aivine/logo.webp" alt="" class="header_left_logo">
                 </a>
             </div>
             <div class="head header_right">
@@ -38,10 +38,10 @@
 
 
             <div class="footer">
-                <img src="/images/aivine/headerLeftrococo.png" alt="" class="footer_background_img1">
+                <img src="/images/aivine/headerLeftrococo.webp" alt="" class="footer_background_img1">
                 <div class="footer_block">
                     <a href="/">
-                        <img src="/images/aivine/logo2.png" alt="" class="footer_left_logo">
+                        <img src="/images/aivine/logo2.webp" alt="" class="footer_left_logo">
                     </a>
                     <a class="footer_button" href="/contacts"><p class="footer_button_text">TO ORDER</p></a>
                     <div class="copyright_box">
@@ -52,7 +52,7 @@
                 </div>
                 {{-- <img src="/images/aivine/footer22.png" alt="" class="footer_right_logo"> --}}
             </div>
-            <img src="/images/aivine/Black.svg" alt="img" class="footer_right_logo">
+            <img src="/images/aivine/Black.webp" alt="img" class="footer_right_logo">
 
     </div>
     
