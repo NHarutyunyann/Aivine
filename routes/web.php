@@ -4,6 +4,7 @@ use App\Http\Controllers\Front\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\SitemapController;
 
+Route::get('/sitemap.xml', [SitemapController::class, 'sitemap']);
 
 Route::get('/', [HomeController::class, 'index'])->name('/');
 
