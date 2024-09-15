@@ -1,5 +1,5 @@
 @extends('layouts.front')
-@section('title')Aivine Beauty aivinebeauty aivine beauty | aivinebeauty.com @endsection
+@section('title')aivine Aivine Beauty aivinebeauty | aivinebeauty.com @endsection
 @section('description')We offer a perfect needle hair removal systems that will produce 100% results and help you grow the number of customers. Outstanding for a professional salon and Medispa setting @endsection
 @section('keywords')aivinebeauty.com, AIVINE Beauty & ESTHETICS beautiful, needle hair removal, asexayin, epilacia, mazaheracum, mazaheracman sarq @endsection
 @section('url'){{ url('/') }}@endsection

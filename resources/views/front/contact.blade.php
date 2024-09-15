@@ -1,5 +1,5 @@
 @extends('layouts.front')
-@section('title')Aivine Beauty Contacts @endsection
+@section('title')aivinebeauty aivine aivinebeauty @endsection
 @section('description') @endsection
 @section('keywords')Aivine beauty & esthetics,aivine beauty, asexain, epilacia, aivine contact, aivine asexayin mazaheracum, patvirel, aivinebeauty contact, aivinebeauty com, @endsection
 @section('url')
