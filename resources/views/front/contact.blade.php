@@ -1,7 +1,7 @@
 @extends('layouts.front')
-@section('title')aivinebeauty aivine aivinebeauty @endsection
-@section('description') @endsection
-@section('keywords')Aivine beauty & esthetics,aivine beauty, asexain, epilacia, aivine contact, aivine asexayin mazaheracum, patvirel, aivinebeauty contact, aivinebeauty com, @endsection
+@section('title')Order Aivine Removal System Fill in your information | Aivine @endsection
+@section('description')For Order Aivine Galvanic painless Hair Removal System, Fill  in your information, and AivineBeauty will contact you @endsection
+@section('keywords')aivine,  aivinebeauty, @aivine, davinebeauty aivine AIVINE Beauty & ESTHETICS beautiful, needle hair removal @endsection
 @section('url')
     {{ url('/contacts') }}
 @endsection
@@ -10,7 +10,7 @@
 <div class='contact'>
     <div class='contact_first'>
         <img class="contact_first_img" src="/images/aivine/contactimage.webp" alt="images">
-        <p class="contact_first_text">Fill in your information</p>
+        <h1 class="contact_first_text">Fill in your information</h1>
     </div>
     <div class="contanier">
         <div class="send_message">
