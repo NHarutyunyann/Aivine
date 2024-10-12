@@ -936,8 +936,11 @@ left: -30%;
 }
 @media screen and (max-width: 425px){
   .contact_first_text {
-    
     font-size: 12px;
+  }
+  .contact_first_text h1 {
+    font-size: 12px;
+    padding: 5px 4px;
   }
 }
 

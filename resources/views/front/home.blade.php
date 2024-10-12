@@ -11,7 +11,7 @@
         <div class='contact_first'>
             <img class="contact_first_img" src="/images/aivine/homefirstimg.webp" alt="images">
                 <div class="contact_first_text">
-                    <h1>Thermolysis - Galvanic Blend Electrolysis Permanent, painless Hair Removal System</h1>
+                    <h1 class="" >Thermolysis - Galvanic Blend Electrolysis Permanent, painless Hair Removal System</h1>
                         <a class="home_first_btn" href="/contacts">
                             <button class="home_first_btn">ORDER</button>
                         </a>

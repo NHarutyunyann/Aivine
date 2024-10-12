@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="/images/code-origins/icon_.svg">
+    <link rel="icon" type="image/x-icon" href="/images/aivine/adminLogo.webp">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Admin &lsaquo; @yield('title')</title>
-    <link rel="shortcut icon" href="{{ URL::asset('/images/favicon.png') }}" type="image/x-icon" />
-    <link rel="stylesheet" href="{{ asset('fonts/googleapis/fonts.googleapis.css') }}">
+    <link rel="shortcut icon" href="{{ URL::asset('images/aivine/adminLogo.webp') }}" type="image/x-icon" />
+    {{-- <link rel="stylesheet" href="{{ asset('fonts/googleapis/fonts.googleapis.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('fontawesome-free/css/all.css') }}">
     <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/toastr.min.css') }}">

@@ -1,8 +1,7 @@
 <header class="admin-header position-fixed">
     <div class="visit-site-box">
         <a href="/">
-            <i class="fas fa-home"></i>
-            Aivine
+            <i class="fas fa-home"> Aivine</i>
         </a>
         <ul class="list">
             <li>
@@ -14,7 +13,7 @@
         <div class="admin-name-box">
             <p>Howdy, Admin</p>
         </div>
-        <img loading="lazy"  src="{{asset('/images/person/avatar.png')}}" class="admin-image">
+        <img loading="lazy"  src="{{asset('/images/aivine/avatar.png')}}" class="admin-image">
 
         <div class="logout-box position-absolute">
             <div class="logout-box--inner">

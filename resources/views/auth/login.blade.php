@@ -5,7 +5,7 @@
 @section('content')
     <div id="admin" class="login-box" >
         <div class="logo-box text-center">
-            <a href="{{url('/admin')}}" class="h1"><img loading="lazy"  style="width: 100%;" src="/images/aivine/adminLogo.png"/></a>
+            <a href="{{url('/admin')}}" class="h1"><img loading="lazy"  style="width: 100%;" src="/images/aivine/adminLogo.webp"/></a>
         </div>
         <p class="message">You are now logged out.</p>
         <div class="login-form">
